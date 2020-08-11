@@ -1,0 +1,79 @@
+.olive-oil-name-sec{
+	padding: 150px 0;
+}
+.olive-oil-name-inr{
+	display: flex;
+	align-items: center;
+}
+.olive-oil-name-fea-img{
+	max-width: 47%;
+	width: 100%;
+	padding-right: 5px;
+}
+.olive-oil-name-fea-img img{
+	border-radius: 20px;
+}
+.olive-oil-name-desc{
+	max-width: 53%;
+	width: 100%;
+	padding-left: 45px;
+}
+.olive-oil-name-sub-title{
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Big Caslon';
+	margin-bottom: 20px;
+}
+.olive-oil-name-sub-title-up{
+	text-transform: uppercase;
+	line-height: 40px;
+}
+.olive-oil-name-title{
+	font-size: 60px;
+	line-height: 1;
+	text-transform: capitalize;
+	margin-bottom: 45px;
+}
+.olive-oil-name-desc > p{
+
+}
+
+.olive-oil-grid-items{
+
+}
+.olive-oil-grid-items-inr{
+	padding: 0 10px;
+	min-height: 296px;
+	border-radius: 10px;
+	background: rgba(166, 148, 143, 0.12);
+	display: flex;
+	align-items: center;
+}
+.olive-oil-grid-items-inr > ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.olive-oil-grid-items-inr > ul > li{
+	width: 25%;
+	padding: 0 5px;
+}
+.olive-oil-grid-items-inr > ul > li:first-child{
+	padding-left: 0;
+}
+.olive-oil-grid-items-inr > ul > li:last-child{
+	padding-right: 0;
+}
+.olive-oil-grid-item{
+	text-align: center;
+}
+.olive-oil-grid-item-img{
+	margin-bottom: 20px;
+}
+.olive-oil-grid-item-title{
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 18px;
+}
+.olive-oil-grid-item >p{
+	font-size: 14px;
+}
