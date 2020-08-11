@@ -1,13 +1,112 @@
+.hdr-lft{
+	float: left;
+	padding: 18px 0;
+}
+.hdr-rgt{
+	float: right;
+}
+.hdr-rgt{
+	padding-top: 65px;
+}
+.main-nav{
+	float: left;
+	padding-top: 6px;
+}
+.hdr-social{
+	float: left;
+	padding-top: 6px;
+}
+.hdr-lan{
+	float: left;
+}
 nav.main-nav ul{
 
 }
 nav.main-nav ul li{
-	
+	float: left;
+	padding: 0 24px;
+    padding-bottom: 54px;
+}
+nav.main-nav ul li:first-child{
+	padding-left: 0;
+}
+nav.main-nav ul li:last-child{
+	padding-right: 0;
 }
 nav.main-nav ul li a{
-	
+	font-size:20px;
+	line-height: 1;
+	color: #F3EFEB;
+	position: relative;
+	transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
 }
-nav.main-nav > ul{
+nav.main-nav ul li a:hover,
+nav.main-nav ul li .active{
+	color: #B78454;
+}
+nav.main-nav ul li a:hover:after,
+nav.main-nav ul li .active:after{
+	content: "";
+    position: absolute;
+    right: -2px;
+    bottom: -5px;
+    background: url(../images/nav-line.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 38px;
+    height: 5px;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu{
+    position: absolute;
+    top: 100%;
+    left: -18px;
+    min-width: 200px;
+    padding: 17px;
+    background: #fff;
+    z-index: 30;
+    transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+    transform-origin: top;
+    -ms-transform-origin: top;
+    -webkit-transform-origin: top;
+    opacity: 0;
+}
+nav.main-nav > ul > li.menu-item-has-children:hover > ul.sub-menu {
+    transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+    opacity: 1;
+}
+nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li{
+	padding-bottom: 23px;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li:last-child{
+	padding-bottom: 0;
+}
+nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a{
+	display: inline-block;
+	color: #9B6A6C;
+}
+nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:hover{
+}
+nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a.active{
+
+}
+/* nav.main-nav > ul{
 
 }
 nav.main-nav > ul > li{
@@ -27,4 +126,74 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	
+} */
+
+.hdr-social{
+	padding-left: 48px;
+	padding-right: 48px;
+}
+.hdr-social ul > li{
+	float: left;
+	padding: 0 4px;
+}
+.hdr-social ul > li:first-child{
+	margin-left: 0;
+}
+.hdr-social ul > li:last-child{
+	margin-right: 0;
+}
+.hdr-social ul > li > a{
+	color: #f3f0eb;
+	font-size: 25px;
+}
+.hdr-social ul > li > a:hover{
+	color: #B78454;
+}
+.hdr-lan ul > li{
+	float: left;
+	margin: 0 4px;
+	border: 2px solid #A6948F;
+	background: transparent;
+	border-radius: 50%;
+	height: 36px;
+	width: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+.hdr-lan ul > li:first-child{
+	margin-left: 0;
+}
+.hdr-lan ul > li:last-child{
+	margin-right: 0;
+}
+.hdr-lan ul > li > a{
+	color: #A6948F;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+	font-family: 'Archivo', sans-serif;
+	
+}
+.hdr-lan ul > li:hover,
+.hdr-lan ul > li:hover a{
+	background: #A6948F;
+	color: #FFFFFF;
+	transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+.hdr-lan ul .active a,
+.hdr-lan ul .active{
+	background: #A6948F;
+	color: #FFFFFF;
+	transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
 }

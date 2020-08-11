@@ -22,8 +22,13 @@ body {
     line-height: 24px;
     font-family: 'Lora', serif;
     /* font-family: 'Didot';
+<<<<<<< HEAD
     font-family: 'Big Caslon'; */
     /*font-family: 'Merriweather', serif;*/
+=======
+    font-family: 'Big Caslon';
+    font-family: 'Archivo', sans-serif; */
+>>>>>>> fd04ac2c93cfdf80bf493d26f834ae6b9204835f
 }
 p{
 	line-height: 1.2;
