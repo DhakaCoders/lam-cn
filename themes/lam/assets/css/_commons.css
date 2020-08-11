@@ -16,10 +16,13 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 
 body {
-    background: #f8f8f8;
-    color: #000000;
+    background: #251b1c;
+    color: #F3EFEB;
     font-size: 18px;
     line-height: 24px;
+    font-family: 'Lora', serif;
+    /* font-family: 'Didot';
+    font-family: 'Big Caslon'; */
 }
 p{
 	line-height: 1.2;
@@ -91,7 +94,7 @@ Containers
 
 }
 .container{
-	max-width: 1200px;
+	max-width: 1300px;
 	width: 100%;
 }
 .container-md{
@@ -309,4 +312,26 @@ form .dropdown-menu li a{
 }
 .dropdown-menu.show{
 	width: 100%;
+}
+
+
+
+
+/* unorder-list */
+.default-page-con ul li,
+ul li{
+	padding: 10px 0 25px 28px;
+    position: relative;
+    line-height: 24px;
+}
+.default-page-con ul li::before, ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    background: url(../images/list-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 14px;
+    height: 12px;
 }

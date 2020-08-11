@@ -151,4 +151,30 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
     new WOW().init();
 
+
+
+    /*End of Noyon*/
+
+
+
+
+
+
+
+
+
+
+     /*End of Shariful*/
+
+
+
+
+
+
+
+
+
+
+      /*End of Rannojit*/
+
 })(jQuery);
