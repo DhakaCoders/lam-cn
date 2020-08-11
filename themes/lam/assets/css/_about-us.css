@@ -1,0 +1,246 @@
+/* page banner */
+
+.page-banner{
+	position: relative;
+}
+.page-banner-bg{
+	min-height: 522px;
+}
+.page-banner-des{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding-top: 190px;
+}
+.page-banner-title{
+	display: block;
+	font-size: 124px;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-weight: 500;
+	font-family: 'Didot';
+	text-transform: capitalize;
+}
+
+
+
+.lam-about-us-grd-sec{
+	padding: 145px 0 0 0;
+}
+
+.lam-about-us-grd-sec-inr > ul > li{
+	padding-bottom: 78px;
+}
+
+.lam-about-us-grd-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.lam-about-us-grd-item-fea-img{
+	min-height: 715px;
+	width: 50%;
+	order: 2;
+	border-radius: 20px;
+}
+.lam-about-us-grd-item-des{
+	width: 50%;
+	order: 1;
+	padding-right: 20px;
+}
+
+.lam-about-us-grd-sec-inr > ul > li:nth-child(2n+2) .lam-about-us-grd-item-fea-img{
+	order: 1;
+	margin-right: 50px;
+	width: 48%;
+}
+.lam-about-us-grd-sec-inr > ul > li:nth-child(2n+2) .lam-about-us-grd-item-des{
+	order: 2;
+	width: 52%;
+}
+
+.lam-about-us-grd-item-des-title{
+	display: block;
+	font-size: 60px;
+	line-height: 1;
+	margin-bottom: 40px;
+	font-weight: normal;
+	text-transform: capitalize;
+}
+.lam-about-us-grd-item-des p{
+	margin-bottom: 40px;
+	line-height: 1.7;
+}
+.lam-about-us-grd-item-des p strong{
+	font-weight: 700;
+}
+
+.lam-about-us-grd-item-des-link-left{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-right: 6px;
+}
+.lam-about-us-grd-item-des-link-rgt{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: 6px;
+}
+.lam-about-us-grd-item-des-link-left a{
+	display: inline-block;
+	vertical-align: baseline;
+	width: 200px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	color: #F3EFEB;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	text-transform: capitalize;
+	background: #DC6A2E;
+	border: 2px solid #DC6A2E;
+	border-radius: 30px;
+}
+.lam-about-us-grd-item-des-link-rgt a{
+	display: inline-block;
+	vertical-align: baseline;
+	width: 200px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	color: #A6948F;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	text-transform: capitalize;
+	background: transparent;
+	border: 2px solid #A6948F;
+	border-radius: 30px;
+}
+
+.lam-about-us-gallery-sec{
+	padding-left: 35px;
+	padding-right: 35px;
+	position: relative;
+}
+.lam-about-us-gallery-sec ul{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.lam-about-us-gallery-sec ul li{
+	float: left;
+	width: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.lam-about-us-gallery-item{
+	min-height: 423px;
+	border-radius: 20px;
+	opacity: 0.6;
+}
+
+.lam-about-us-gallery-btm-logo{
+	position: absolute;
+	bottom: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+.lam-about-us-tradition-sec{
+	padding-top: 250px;
+	padding-bottom: 200px;
+	background: url('../images/lam-about-us-tradition-sec-bg.png');
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important;
+}
+.lab-about-us-trdt-ambition{
+	text-align: center;
+	padding-bottom: 80px;
+}
+.lab-about-us-trdt-ambition-title{
+	display: block;
+	font-size: 60px;
+	line-height: 1;
+	margin-bottom: 38px;
+	font-weight: normal;
+	text-align: center;
+}
+.lab-about-us-trdt-wines{
+	text-align: center;
+}
+.lab-about-us-trdt-wines span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 80px;
+	line-height: 1;
+	color: #B78454;
+	margin-bottom: 12px;
+}
+.lab-about-us-trdt-wines-title{
+	display: block;
+	font-size: 36px;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-weight: normal;
+	color: #B78454;
+}
+
+
+.lam-about-us-generation-sec{
+	padding: 190px 0 0 0;
+}
+.lam-about-us-generation-sec-inr{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.lam-about-us-generation-fea-img{
+	float: left;
+	width: 40%;
+	min-height: 720px;
+	border-radius: 20px;
+}
+.lam-about-us-generation-des{
+	float: right;
+	width: 60%;
+	padding-left: 90px;
+}
+
+.lam-about-us-generation-des-title{
+	display: block;
+	font-size: 48px;
+	line-height: 1;
+	margin-bottom: 35px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #B78454;
+	padding-top: 120px;
+	position: relative;
+}
+.lam-about-us-generation-des-title:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../images/lam-about-us-generation-des-quote.png');
+	background-repeat: no-repeat;
+	height: 115px;
+	width: 116px;
+}
+
+.lam-about-us-generation-des p{
+	font-size: 30px;
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+.lam-about-us-generation-des strong{
+	font-weight: 700;
+	text-transform: capitalize;
+}
