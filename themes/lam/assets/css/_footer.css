@@ -1,0 +1,108 @@
+.ftr-top-nav{
+	background: #231A1B;
+}
+.ftr-nav-inr{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 63px 0;
+}
+.ftr-nav-inr ul li{
+	float: left;
+	padding: 0 24px;
+}
+.ftr-nav-inr ul li:first-child{
+	padding-left: 0;
+}
+.ftr-nav-inr ul li:last-child{
+	padding-right: 0;
+}
+.ftr-nav-inr ul li a{
+	font-size:20px;
+	line-height: 1;
+	color: #F3EFEB;
+	position: relative;
+	transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+.ftr-nav-inr ul li a:hover,
+.ftr-nav-inr ul li .active{
+	color: #B78454;
+}
+.ftr-nav-inr ul li a:hover:after,
+.ftr-nav-inr ul li .active:after{
+	content: "";
+    position: absolute;
+    right: -2px;
+    bottom: -5px;
+    background: url(../images/nav-line.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 38px;
+    height: 5px;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+.ftr-btm-inr{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 60px 0 35px 0;
+	flex-wrap: wrap;
+}
+.ftr-copyright,
+.ftr-pg-link,
+.ftr-designby{
+	margin-bottom: 25px;
+}
+.ftr-copyright p{
+	color: #F3EFEB;
+	font-size: 16px;
+	margin-bottom: 0;
+}
+.ftr-pg-link{
+
+}
+.ftr-pg-link > ul > li{
+	padding: 0 18px;
+	position: relative;
+	float: left;
+}
+.ftr-pg-link > ul > li:after{
+	content: "";
+	position: absolute;
+	right: -3px;
+	top: 50%;
+	margin-top: 2px;
+	transform: translateY(-50%);
+	height: 1px;
+	width: 5px;
+	background: #F3EFEB;
+}
+.ftr-pg-link > ul > li:first-child{
+	padding-left: 0;
+}
+.ftr-pg-link > ul > li:last-child{
+	padding-right: 0;
+}
+.ftr-pg-link > ul > li:last-child:after{
+	display: none;
+}
+.ftr-pg-link > ul > li > a{
+	color: #F3EFEB;
+	font-size: 16px;
+}
+.ftr-pg-link > ul > li > a:hover{
+	color: #B78454;
+}
+.ftr-designby a{
+	color: #F3EFEB;
+	font-size: 16px;
+}
+.ftr-designby a:hover{
+	color: #B78454;
+}
