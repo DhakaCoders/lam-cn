@@ -1,13 +1,11 @@
 .main-bnr-sec-des{
 	padding: 120px 0 0 0;
+	max-width: 558px;
+	width: 100%;
 }
 .main-bnr-logo-xlg{
-	padding-bottom: 28px;
+	padding-bottom: 42px;
 }
-.mbsd-bredcrumbs{
-	padding-bottom: 20px;
-}
-
 
 .main-bnr-sub-title strong{
 	display: inline-block;
@@ -16,6 +14,8 @@
 	letter-spacing: 0.1em;
 	font-size: 18px;
 	line-height: 1;
+	margin-bottom: 30px;
+	font-weight: 400;
 }
 .main-bnr-sub-title strong span{
 	display: inline-block;
@@ -40,4 +40,29 @@
 	text-transform: capitalize;
 	font-family: 'Merriweather', serif;
 	font-weight: 700;
+	border: 2px solid #DC6A2E;
+}
+.main-bnr-sec-des > a:hover{
+	background: transparent;
+}
+
+
+.hm-about-us-section{
+	position: relative;
+	padding: 380px 0 0;
+	margin-top: 300px;
+}
+.hm-about-us-top-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100%;
+}
+
+.hm-about-us-bg-1{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 60%;
 }
