@@ -1,0 +1,43 @@
+.main-bnr-sec-des{
+	padding: 120px 0 0 0;
+}
+.main-bnr-logo-xlg{
+	padding-bottom: 28px;
+}
+.mbsd-bredcrumbs{
+	padding-bottom: 20px;
+}
+
+
+.main-bnr-sub-title strong{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #B78454;
+	letter-spacing: 0.1em;
+	font-size: 18px;
+	line-height: 1;
+}
+.main-bnr-sub-title strong span{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 0 25px;
+}
+.main-bnr-sec-des p{
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+
+.main-bnr-sec-des > a{
+	color: #fff;
+	background: #DC6A2E;
+	border-radius: 30px;
+	width: 180px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+}
