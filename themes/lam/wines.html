@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wines</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
+  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
+  <?php } ?> -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->	
+
+
+    <svg style="display: none;">
+    <symbol id="quote-xlg-icon-svg" width="153" height="152" viewBox="0 0 153 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0)">
+      <path d="M142.974 68.5576C136.562 62.0706 128.061 58.3152 118.956 57.926C118.913 57.3607 118.881 56.5817 118.881 55.5156C118.881 51.148 122.224 37.8026 124.332 30.4166L126.488 22.8594L100.316 22.8594L98.5626 25.6657C97.8673 26.779 81.5273 53.3936 81.5273 93.5156C81.5273 113.159 97.6139 129.141 117.387 129.141C137.16 129.141 153.246 113.159 153.246 93.5156C153.246 84.1222 149.598 75.2587 142.974 68.5576ZM117.387 117.266C104.205 117.266 93.4805 106.611 93.4805 93.5156C93.4805 64.03 103.293 42.2055 107.17 34.7344H110.795C109.078 41.439 106.928 50.7778 106.928 55.5156C106.928 59.2753 107.209 62.2957 108.581 64.8167C109.802 67.0623 112.358 69.7368 117.6 69.7653L117.861 69.7719C130.781 70.0206 141.293 80.6719 141.293 93.5156C141.293 106.611 130.569 117.266 117.387 117.266Z" fill="#B78454"/>
+      <path d="M61.4468 68.5576C55.0346 62.0706 46.5341 58.3152 37.4285 57.926C37.3855 57.3607 37.3535 56.5817 37.3535 55.5156C37.3535 51.148 40.6968 37.8026 42.8044 30.4166L44.9611 22.8594L18.7885 22.8594L17.0353 25.6657C16.3399 26.779 0 53.3936 0 93.5156C0 113.159 16.0865 129.141 35.8594 129.141C55.6322 129.141 71.7188 113.159 71.7188 93.5156C71.7188 84.1222 68.0707 75.2587 61.4468 68.5576ZM35.8594 117.266C22.6775 117.266 11.9531 106.611 11.9531 93.5156C11.9531 64.03 21.7654 42.2055 25.643 34.7344H29.2675C27.5502 41.439 25.4004 50.7778 25.4004 55.5156C25.4004 59.2752 25.6813 62.2957 27.0532 64.8167C28.2751 67.0623 30.8307 69.7368 36.0727 69.7653L36.3336 69.7719C49.2541 70.0206 59.7656 80.6719 59.7656 93.5156C59.7656 106.611 49.0413 117.266 35.8594 117.266Z" fill="#B78454"/>
+      </g>
+      <defs>
+      <clipPath id="clip0">
+      <rect width="153" height="152" fill="white"/>
+      </clipPath>
+      </defs>
+    </symbol>
+
+   </svg>
+
+</head>
+<body>
+<header class="header">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-inr clearfix">
+            <div class="hdr-lft">
+              <div class="logo">
+                <a href="#"><img src="assets/images/hdr-Logo.png"></a>
+              </div>
+            </div>
+            <div class="hdr-rgt clearfix">
+              <nav class="main-nav">
+                <ul class="clearfix reset-list">
+                  <li><a class="active" href="#">Home</a></li>
+                  <li><a href="#">The Family</a></li>
+                  <li class="menu-item-has-children"><a href="#">Wines</a>
+                    <ul class="sub-menu">
+                      <li><a class="active" href="#">Acabados</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Olive Oil</a></li>
+                  <li><a href="#">Contact & Point of sales</a></li>
+                </ul>
+              </nav>
+              <div class="hdr-social">
+                <ul class="reset-list clearfix">
+                  <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+              <div class="hdr-lan">
+                <ul class="reset-list clearfix">
+                  <li class="active"><a href="#">EN</a></li>
+                  <li><a href="#">IT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="page-banner-controller" style="overflow: hidden;">
+    <div class="page-banner-bg inline-bg" style="background: url('assets/images/wines-pg-bnr.png');"></div>
+    <div class="page-banner-des">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-banner-des-inner">
+              <h1 class="page-banner-title">Wines</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wines-pages">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wines-pages-inr">
+          <ul class="reset-list">
+            <li class="active"><a href="#" class="active scrollto" data-to="#wines-row-one">Chianti Classico</a></li>
+            <li><a href="#" class="scrollto" data-to="#wines-row-two">Chianti Classico Riserva</a></li>
+            <li><a href="#" class="scrollto" data-to="#wines-row-three">Chianti Rosso</a></li>
+            <li><a href="#" class="scrollto" data-to="#wines-row-four">Chianti Rosato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lam-wines-section inline-bg" style="background-image: url('assets/images/lam-wines-section-bg.png');">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="hm-grds">
+            <ul class="reset-list">
+              <li class="clearfix">
+                <div class="hm-grd-item clearfix">
+                  <div class="hmgi-col hm-grd-item-fea-img">
+                    <div class="inline-bg" style="background: url(assets/images/lam-wines-fea-img-001.jpg);"></div>
+                  </div>
+                  <div class="hmgi-col hm-grd-item-des">
+                    <h6 class="hmgid-sub-title">Passion for taste</h6>
+                    <h2 class="hmgid-title">Our Wines</h2>
+                    <p>Nullam a magna vitae nulla efficitur hendrerit. Maecenas sit amet elementum elit. Nunc aliquet risus interdum enim viverra tempor. Nulla in augue eleifend, egestas velit a, faucibus ex.</p>
+                    <a class="lm-btn" href="#">Scroll Down</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>    
+</section>
+
+<section class="wines-grid-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wines-grid-cntlr">
+          <ul class="">
+            <li id="wines-row-one">
+              <div class="wines-grid-item clearfix">
+                <div class="wines-grid-item-fea-img">
+                  <img src="assets/images/wines-grid-item-fea-img-001.png" alt="">
+                </div>
+                <div class="wines-grid-item-desc olive-oil-name-desc">
+                  <div class="olive-oil-name-sub-title wines-grid-item-sub-title">
+                    <span class="olive-oil-name-sub-title-up wines-grid-item-sub-title-up">LA MACINAIA</span><br>
+                    diSan Vincenti
+                  </div>
+                  <h3 class="olive-lam-inr-desc-title wines-grid-item-title">Chianti Classico</h3>
+                  <p>Donec consequat vestibulum metus. Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit, sollicitudin scelerisque purus leo id lectus. Quisque velit neque, euismod vitae magna sed, maximus cursus dui.</p>
+                  <strong><p>Sem sapien volutpat velit</p></strong>
+                  <ul>
+                    <li>Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit.</li>
+                    <li> Vivamus congue felis rutrum, fringilla mauris.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wines-grid-blockquote">
+                <blockquote>
+                  <i>
+                    <img src="assets/images/wines-grid-blockquote-icon.png" alt="">
+                  </i>
+                  <p>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare,<br> turpis odio suscipit enim, ut posuere sapien..</p>
+                  <strong>- Steven Rym, Customer</strong>
+                </blockquote>
+              </div>
+            </li>
+            <li id="wines-row-two">
+              <div class="wines-grid-item clearfix">
+                <div class="wines-grid-item-fea-img">
+                  <img src="assets/images/wines-grid-item-fea-img-002.png" alt="">
+                </div>
+                <div class="wines-grid-item-desc olive-oil-name-desc">
+                  <div class="olive-oil-name-sub-title wines-grid-item-sub-title">
+                    <span class="olive-oil-name-sub-title-up wines-grid-item-sub-title-up">LA MACINAIA</span><br>
+                    diSan Vincenti
+                  </div>
+                  <h3 class="olive-lam-inr-desc-title wines-grid-item-title">Chianti Classico Riserva</h3>
+                  <p>Donec consequat vestibulum metus. Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit, sollicitudin scelerisque purus leo id lectus. Quisque velit neque, euismod vitae magna sed, maximus cursus dui.</p>
+                  <strong><p>Sem sapien volutpat velit</p></strong>
+                  <ul>
+                    <li>Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit.</li>
+                    <li> Vivamus congue felis rutrum, fringilla mauris.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wines-grid-blockquote">
+                <blockquote>
+                  <i>
+                    <img src="assets/images/wines-grid-blockquote-icon.png" alt="">
+                  </i>
+                  <p>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare,<br> turpis odio suscipit enim, ut posuere sapien..</p>
+                  <strong>- Steven Rym, Customer</strong>
+                </blockquote>
+              </div>
+            </li>
+            <li id="wines-row-three">
+              <div class="wines-grid-item clearfix">
+                <div class="wines-grid-item-fea-img">
+                  <img src="assets/images/wines-grid-item-fea-img-003.png" alt="">
+                </div>
+                <div class="wines-grid-item-desc olive-oil-name-desc">
+                  <div class="olive-oil-name-sub-title wines-grid-item-sub-title">
+                    <span class="olive-oil-name-sub-title-up wines-grid-item-sub-title-up">LA MACINAIA</span><br>
+                    diSan Vincenti
+                  </div>
+                  <h3 class="olive-lam-inr-desc-title wines-grid-item-title">Chianti Rosso</h3>
+                  <p>Donec consequat vestibulum metus. Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit, sollicitudin scelerisque purus leo id lectus. Quisque velit neque, euismod vitae magna sed, maximus cursus dui.</p>
+                  <strong><p>Sem sapien volutpat velit</p></strong>
+                  <ul>
+                    <li>Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit.</li>
+                    <li> Vivamus congue felis rutrum, fringilla mauris.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wines-grid-blockquote">
+                <blockquote>
+                  <i>
+                    <img src="assets/images/wines-grid-blockquote-icon.png" alt="">
+                  </i>
+                  <p>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare,<br> turpis odio suscipit enim, ut posuere sapien..</p>
+                  <strong>- Steven Rym, Customer</strong>
+                </blockquote>
+              </div>
+            </li>
+            <li id="wines-row-four">
+              <div class="wines-grid-item clearfix">
+                <div class="wines-grid-item-fea-img">
+                  <img src="assets/images/wines-grid-item-fea-img-004.png" alt="">
+                </div>
+                <div class="wines-grid-item-desc olive-oil-name-desc">
+                  <div class="olive-oil-name-sub-title wines-grid-item-sub-title">
+                    <span class="olive-oil-name-sub-title-up wines-grid-item-sub-title-up">LA MACINAIA</span><br>
+                    diSan Vincenti
+                  </div>
+                  <h3 class="olive-lam-inr-desc-title wines-grid-item-title">Chianti Rosato</h3>
+                  <p>Donec consequat vestibulum metus. Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit, sollicitudin scelerisque purus leo id lectus. Quisque velit neque, euismod vitae magna sed, maximus cursus dui.</p>
+                  <strong><p>Sem sapien volutpat velit</p></strong>
+                  <ul>
+                    <li>Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit.</li>
+                    <li> Vivamus congue felis rutrum, fringilla mauris.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wines-grid-blockquote">
+                <blockquote>
+                  <i>
+                    <img src="assets/images/wines-grid-blockquote-icon.png" alt="">
+                  </i>
+                  <p>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare,<br> turpis odio suscipit enim, ut posuere sapien..</p>
+                  <strong>- Steven Rym, Customer</strong>
+                </blockquote>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="lm-testi-angle-section clearfix">
+   <div class="lm-testi-angle-sec-des-cntlr" style="background: url(assets/images/lm-testi-angle-sec-bg-1.png);">
+    <blockquote>
+      <i>
+        <svg class="quote-xlg-icon-svg" width="153" height="152" viewBox="0 0 153 152" fill="#B78454">
+          <use xlink:href="#quote-xlg-icon-svg"></use>
+        </svg> 
+      </i>
+      <p>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare, turpis odio suscipit enim, ut posuere sapien.</p>
+      <strong>- Steven Rym, Customer</strong>
+    </blockquote>
+   </div>
+   <div class="lm-testi-angle-sec-rgt-img" style="background: url(assets/images/lam-olive-oil-angle-sec-rgt-img.png);">
+
+   </div>
+   <div class="lm-testi-angle-sec-logo">
+     <img src="assets/images/logo-xlg-2.svg">
+   </div>
+
+</section>
+
+<footer class="footer-wrp">
+  <div class="ftr-top-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ftr-nav-inr">
+            <ul class="clearfix reset-list">
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">The Family</a></li>
+              <li><a href="#">Wines</a></li>
+              <li><a href="#">Olive Oil</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ftr-btm">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ftr-btm-inr">
+            <div class="ftr-copyright">
+              <p>© 2020 La Macinaia. All Rights Reserved.</p>
+            </div>
+            <div class="ftr-pg-link">
+              <ul class="reset-list clearfix">
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="ftr-designby">
+              <a href="#" target="_blank">webdesign by conversal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="assets/slick.slider/slick.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo2-QJ7RdCkLw3NFZEu71mEKJ_8LczG-c"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
