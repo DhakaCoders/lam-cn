@@ -31,7 +31,7 @@
 }
 
 .lam-about-us-grd-sec-inr > ul > li{
-	padding-bottom: 78px;
+	padding-bottom: 80px;
 }
 
 .lam-about-us-grd-item{
@@ -60,17 +60,18 @@
 	width: 52%;
 }
 
+
+
 .lam-about-us-grd-item-des-title{
 	display: block;
 	font-size: 60px;
 	line-height: 1;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	font-weight: normal;
 	text-transform: capitalize;
 }
 .lam-about-us-grd-item-des p{
-	margin-bottom: 40px;
-	line-height: 1.7;
+	margin-bottom: 30px;
 }
 .lam-about-us-grd-item-des p strong{
 	font-weight: 700;
@@ -167,7 +168,7 @@
 	display: block;
 	font-size: 60px;
 	line-height: 1;
-	margin-bottom: 38px;
+	margin-bottom: 32px;
 	font-weight: normal;
 	text-align: center;
 }
@@ -243,3 +244,6 @@
 	font-weight: 700;
 	text-transform: capitalize;
 }
+
+
+
