@@ -31,10 +31,11 @@
 
 
 .lam-about-us-grd-sec{
-	padding: 145px 0 0 0;
+	padding: 140px 0 0 0;
 }
 
 .lam-about-us-grd-sec-inr > ul > li{
+	padding: 0;
 	padding-bottom: 80px;
 }
 .lam-about-us-grd-sec-inr > ul{
@@ -118,6 +119,14 @@
 	background: #DC6A2E;
 	border: 2px solid #DC6A2E;
 	border-radius: 30px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.lam-about-us-grd-item-des-link-left a:hover{
+	background: transparent;
+	border: 2px solid #A6948F;
+	color: #A6948F;
 }
 .lam-about-us-grd-item-des-link-rgt a{
 	display: inline-block;
@@ -135,6 +144,14 @@
 	background: transparent;
 	border: 2px solid #A6948F;
 	border-radius: 30px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.lam-about-us-grd-item-des-link-rgt a:hover{
+	background: #DC6A2E;
+	border: 2px solid #DC6A2E;
+	color: #F3EFEB;
 }
 
 .lam-about-us-gallery-sec{
@@ -153,8 +170,16 @@
 	padding-right: 15px;
 }
 
+
+.lam-about-us-gallery-ctlr{
+	position: relative;
+	height: 423px;
+	overflow: hidden;
+}
+
 .lam-about-us-gallery-item{
-	min-height: 423px;
+	height: 100%;
+	width: 100%;
 	border-radius: 20px;
 	opacity: 0.6;
 }
@@ -170,10 +195,6 @@
 .lam-about-us-tradition-sec{
 	padding-top: 250px;
 	padding-bottom: 200px;
-	background: url('../images/lam-about-us-tradition-sec-bg.png');
-	background-repeat: no-repeat!important;
-	background-size: cover!important;
-	background-position: center center!important;
 }
 .lab-about-us-trdt-ambition{
 	text-align: center;
@@ -183,7 +204,7 @@
 	display: block;
 	font-size: 60px;
 	line-height: 1;
-	margin-bottom: 32px;
+	margin-bottom: 30px;
 	font-weight: normal;
 	text-align: center;
 }

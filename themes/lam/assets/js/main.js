@@ -143,7 +143,7 @@ function initialize(){
     var map= new google.maps.Map(document.getElementById('mapID'),mapProp);
     var marker= new google.maps.Marker({
       position:myCenter,
-        //icon:'map-marker.png'
+        icon:'map-marker.png'
       });
     marker.setMap(map);
 }
@@ -155,6 +155,25 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
+
+
+
+    $('.scrollto').on('click', function(e){
+  e.preventDefault();
+  var togo = $(this).data('to');
+  goToByScroll(togo, 0);
+});
+
+function goToByScroll(id, offset){
+  if(id){
+      // Remove "link" from the ID
+    id = id.replace("link", "");
+      // Scroll
+    $('html,body').animate(
+        {scrollTop: $(id).offset().top - offset},
+      500);
+  }
+}
     /*End of Noyon*/
 
 
