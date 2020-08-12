@@ -186,3 +186,61 @@
 
 
 
+.contact-table-sec-wrap{
+	padding-top: 90px;
+}
+
+
+.contact-table-sec{
+	padding-bottom: 90px;
+}
+.contact-table-title{
+	display: block;
+	font-size: 40px;
+	line-height: 1;
+	margin-bottom: 30px;
+	font-weight: normal;
+	color: #B78454;
+}
+
+.contact-table-sec .table{
+	border: 4px solid rgba(255, 255, 255, 0.05);
+	border-radius: 10px!important;
+}
+.contact-table-sec .table thead{
+	background: rgba(166, 148, 143, 0.12);
+}
+
+.contact-table-sec .table thead th{
+	font-size: 20px;
+	font-weight: 700;
+	padding: 25px 0 30px 0px;
+	border: none;
+}
+.contact-table-sec .table thead th:first-child{
+	padding-left: 56px;
+}
+
+
+.contact-table-sec .table tbody td{
+	padding: 0;
+	border: none;
+}
+.contact-table-sec .table tbody td:first-child{
+	padding-left: 56px;
+}
+.contact-table-sec .table tbody td:last-child{
+	padding-right: 56px;
+}
+.contact-table-sec .table tbody td span{
+	display: block;
+	font-weight: normal;
+	padding: 30px 20px 30px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.contact-table-sec .table tbody tr:last-child td span{
+	border-bottom: none;
+}
+
+
+
