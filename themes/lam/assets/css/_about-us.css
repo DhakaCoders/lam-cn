@@ -37,7 +37,6 @@
 .lam-about-us-grd-item{
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 .lam-about-us-grd-item-fea-img{
 	min-height: 715px;
@@ -48,7 +47,7 @@
 .lam-about-us-grd-item-des{
 	width: 50%;
 	order: 1;
-	padding-right: 20px;
+	padding-right: 50px;
 }
 
 .lam-about-us-grd-sec-inr > ul > li:nth-child(2n+2) .lam-about-us-grd-item-fea-img{
