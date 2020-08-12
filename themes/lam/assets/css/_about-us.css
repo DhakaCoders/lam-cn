@@ -2,17 +2,21 @@
 
 .page-banner{
 	position: relative;
+	overflow: hidden;
 }
 .page-banner-bg{
-	min-height: 522px;
-}
-.page-banner-des{
 	position: absolute;
-	top: 0;
 	left: 0;
+	top: 0;
 	bottom: 0;
 	right: 0;
+	z-index: 1;
+}
+.page-banner-des{
+	position: relative;
+	z-index: 2;
 	padding-top: 190px;
+	padding-bottom: 170px;
 }
 .page-banner-title{
 	display: block;
@@ -31,7 +35,15 @@
 }
 
 .lam-about-us-grd-sec-inr > ul > li{
-	padding-bottom: 78px;
+	padding-bottom: 80px;
+}
+.lam-about-us-grd-sec-inr > ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.lam-about-us-grd-sec-inr > ul > li:before{
+	content: none;
 }
 
 .lam-about-us-grd-item{
@@ -60,22 +72,26 @@
 	width: 52%;
 }
 
+
+
 .lam-about-us-grd-item-des-title{
 	display: block;
 	font-size: 60px;
 	line-height: 1;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	font-weight: normal;
 	text-transform: capitalize;
 }
 .lam-about-us-grd-item-des p{
-	margin-bottom: 40px;
-	line-height: 1.7;
+	margin-bottom: 30px;
 }
 .lam-about-us-grd-item-des p strong{
 	font-weight: 700;
 }
 
+.lam-about-us-grd-item-des-link{
+	padding-top: 15px;
+}
 .lam-about-us-grd-item-des-link-left{
 	display: inline-block;
 	vertical-align: baseline;
@@ -167,7 +183,7 @@
 	display: block;
 	font-size: 60px;
 	line-height: 1;
-	margin-bottom: 38px;
+	margin-bottom: 32px;
 	font-weight: normal;
 	text-align: center;
 }
@@ -198,7 +214,6 @@
 .lam-about-us-generation-sec-inr{
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 .lam-about-us-generation-fea-img{
 	float: left;
@@ -216,7 +231,7 @@
 	display: block;
 	font-size: 48px;
 	line-height: 1;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	font-weight: normal;
 	text-transform: uppercase;
 	color: #B78454;
@@ -243,3 +258,6 @@
 	font-weight: 700;
 	text-transform: capitalize;
 }
+
+
+

@@ -63,6 +63,7 @@
 	right: 0;
 	bottom: 100%;
 	z-index: 10;
+	display: none;
 }
 
 .hm-about-us-bg-1{
@@ -103,7 +104,14 @@
 	width: 200px;
 	height: 56px;
 }
-
+.hmaud-btn a:hover{
+	background: transparent;
+}
+.hmaud-btn-2 a:hover{
+	background: transparent;
+	border-color: #DC6A2E;
+	color: #fff;
+}
 .hmaud-btn-2 a{
 	background: transparent;
 	border-color: #A6948F;
@@ -136,6 +144,14 @@
 	position: relative;
 	padding: 210px 0 125px;
 }
+.hm-grds-sec-top-circle{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: right;
+	z-index: 2;
+}
 .hm-grds-sec-top-line{
 	position: absolute;
 	left: 0;
@@ -143,6 +159,11 @@
 	height: 30px;
 	background: #b78454;
 	width: 68%;
+	z-index: 5;
+}
+.hm-grds{
+	position: relative;
+	z-index: 3;
 }
 .hm-grds ul li{
 	padding-bottom: 85px;
@@ -193,6 +214,10 @@
     color: #fff;
     width: 200px;
     height: 56px;
+}
+.lm-btn:hover{
+	background: transparent;
+	color: #fff;
 }
 .hm-grd-item-des p{
 	margin-bottom: 35px;
@@ -256,4 +281,12 @@
 	bottom: -75px;
 	z-index: 10;
 	right: 5%;
+}
+body.home .lam-about-us-tradition-sec{
+	padding-top: 190px;
+}
+
+.two-sec-cntrl{
+	position: relative;
+	background: url(../images/lines.svg);
 }

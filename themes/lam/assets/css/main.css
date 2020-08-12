@@ -5,7 +5,6 @@
 @import url('_header.css');
 @import url('_page.css');
 @import url('_home.css');
-@import url('_contact.css');
 @import url('_footer.css');
 
 
@@ -16,7 +15,7 @@
 /* End of Noyon */
 
 @import url('_about-us.css');
-
+@import url('_contact.css');
 
 /* End of Shariful */
 
