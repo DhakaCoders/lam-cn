@@ -8,9 +8,8 @@
 .olive-oil-name-fea-img{
 	max-width: 47%;
 	width: 100%;
+	min-height: 466px;
 	padding-right: 5px;
-}
-.olive-oil-name-fea-img img{
 	border-radius: 20px;
 }
 .olive-oil-name-desc{
@@ -42,8 +41,7 @@
 
 }
 .olive-oil-grid-items-inr{
-	padding: 0 10px;
-	min-height: 296px;
+	padding: 63px 10px 33px 10px;
 	border-radius: 10px;
 	background: rgba(166, 148, 143, 0.12);
 	display: flex;
@@ -56,6 +54,7 @@
 .olive-oil-grid-items-inr > ul > li{
 	width: 25%;
 	padding: 0 5px;
+	margin-bottom: 15px;
 }
 .olive-oil-grid-items-inr > ul > li:first-child{
 	padding-left: 0;
@@ -118,8 +117,17 @@
 	-moz-background: radial-gradient(50.43% 58.1% at 52.95% 38.84%, rgba(46, 35, 35, 0) 0%, rgba(37, 27, 28, 0.27) 0.01%, #251B1C 100%);
 	background: radial-gradient(50.43% 58.1% at 52.95% 38.84%, rgba(46, 35, 35, 0) 0%, rgba(37, 27, 28, 0.27) 0.01%, #251B1C 100%);
 }
-.lm-testi-angle-sec-des-cntlr blockquote{
-	position: relative;
-	left: 10%;
-	max-width: 680px;
+.map-side-add{
+    position: absolute;
+    left: 3%;
+    max-width: 300px;
+    width: 100%;
+    top: 165px;
+    z-index: 11;
+}
+.map-side-add .cfls-logo{
+	margin-bottom: 32px;
+}
+.map-side-add .cfls-logo{
+	margin-bottom: 32px;
 }
