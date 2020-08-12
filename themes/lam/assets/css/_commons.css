@@ -329,11 +329,17 @@ form .dropdown-menu li a{
 
 
 /* unorder-list */
+.default-page-con ul,
+ul{
+	padding: 0;
+	margin: 0;
+}
 .default-page-con ul li,
 ul li{
 	padding: 10px 0 25px 28px;
     position: relative;
     line-height: 24px;
+    list-style: none;
 }
 .default-page-con ul li::before, ul li::before {
     content: "";

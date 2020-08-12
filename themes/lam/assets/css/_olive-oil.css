@@ -77,3 +77,28 @@
 .olive-oil-grid-item >p{
 	font-size: 14px;
 }
+.olive-lam-desc{
+
+}
+.olive-lam-desc-inr{
+	display: flex;
+	align-items: center;
+}
+.olive-lam-desc-fea-img{
+	max-width: 51%;
+	width: 100%;
+	order: 2;
+}
+.olive-lam-inr-desc{
+	max-width: 49%;
+	width: 100%;
+	order: 1;
+}
+.olive-lam-inr-desc-title{
+	font-size: 48px;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+.olive-lam-inr-desc ul{
+	padding-top: 20px;
+}
