@@ -33,7 +33,18 @@
 .wines-pages-inr > ul > li.active a{
 	color: #DC6A2E;
 }
-
+.wines-pages-inr > ul > li:nth-child(2) > a:hover,
+.wines-pages-inr > ul > li:nth-child(2).active a{
+	color: #f5e6d1;
+}
+.wines-pages-inr > ul > li:nth-child(3) > a:hover,
+.wines-pages-inr > ul > li:nth-child(3).active a{
+	color: #01628f;
+}
+.wines-pages-inr > ul > li:nth-child(4) > a:hover,
+.wines-pages-inr > ul > li:nth-child(4).active a{
+	color: #d7538f;
+}
 .lam-wines-section{
 	padding: 145px 0 65px 0;
 	background-color: linear-gradient(360deg, rgba(46, 35, 35, 0) -36.24%, rgba(37, 27, 28, 0.27) -36.22%, #251B1C 97.67%);
