@@ -171,8 +171,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-
-
+  var container = $(".container").width();
+  var leftSideWidth = (windowWidth - container ) / 2;
+  $(".lm-testi-angle-sec-des-cntlr blockquote").css({left : leftSideWidth});
 
 
       /*End of Rannojit*/

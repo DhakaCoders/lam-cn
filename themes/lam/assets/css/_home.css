@@ -1,0 +1,259 @@
+.main-bnr-sec-des{
+	padding: 120px 0 0 0;
+	max-width: 558px;
+	width: 100%;
+}
+.main-bnr-logo-xlg{
+	padding-bottom: 42px;
+}
+.hm-about-us-des{
+	padding-left: 62px;
+}
+.hm-about-us-des p{
+	margin-bottom: 45px;
+}
+.main-bnr-sub-title strong{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #B78454;
+	letter-spacing: 0.1em;
+	font-size: 18px;
+	line-height: 1;
+	margin-bottom: 30px;
+	font-weight: 400;
+}
+.main-bnr-sub-title strong span{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 0 25px;
+}
+.main-bnr-sec-des p{
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+
+.main-bnr-sec-des > a{
+	color: #fff;
+	background: #DC6A2E;
+	border-radius: 30px;
+	width: 180px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	border: 2px solid #DC6A2E;
+}
+.main-bnr-sec-des > a:hover{
+	background: transparent;
+}
+
+
+.hm-about-us-section{
+	position: relative;
+	padding: 380px 0 0;
+	margin-top: 300px;
+}
+.hm-about-us-top-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	z-index: 10;
+}
+
+.hm-about-us-bg-1{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 60%;
+}
+.hmaud-title{
+	font-size: 60px;
+	line-height: 1.2;
+	display: block;
+	margin: 0 0 40px 0;
+}
+.hmaud-btns{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -15px 85px;
+
+}
+.hmaud-btn{
+	padding: 0 8px 15px;
+}
+.hmaud-btn a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	border: 2px solid #DC6A2E;
+	background: #DC6A2E;
+	color: #fff;
+	width: 200px;
+	height: 56px;
+}
+
+.hmaud-btn-2 a{
+	background: transparent;
+	border-color: #A6948F;
+	color: #A6948F;
+}
+.hm-about-us-fea-img-1{
+	margin-top: 190px;
+}
+.hm-about-us-fea-img{
+	height: 448px;
+	position: relative;
+}
+.hm-about-us-fea-img div{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.hm-about-us-fea-img-inr-logo{
+	position: absolute;
+	left: -292px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+
+.hm-grds-section{
+	position: relative;
+	padding: 210px 0 125px;
+}
+.hm-grds-sec-top-line{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 30px;
+	background: #b78454;
+	width: 68%;
+}
+.hm-grds ul li{
+	padding-bottom: 85px;
+}
+.hm-grds ul li:nth-child(2n+1) .hm-grd-item-fea-img{
+	order: 2;
+}
+.hm-grd-item{
+	display: flex;
+	align-items: center;
+}
+
+.hm-grd-item-fea-img{
+	height: 600px;
+}
+
+.hm-grd-item-fea-img div{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.hmgid-sub-title{
+	display: block;
+	margin: 0 0 10px 0;
+	color: #A6948F;
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 400;
+}
+
+.hmgid-title{
+	font-size: 114px;
+	line-height: 1.2;
+	margin: 0 0 30px 0;
+}
+.lm-btn{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    border: 2px solid #DC6A2E;
+    background: #DC6A2E;
+    color: #fff;
+    width: 200px;
+    height: 56px;
+}
+.hm-grd-item-des p{
+	margin-bottom: 35px;
+}
+.hm-grds{
+	overflow: hidden;
+}
+.hm-grd-item{
+	margin: 0 -50px;
+}
+.hmgi-col{
+	padding: 0 50px;
+	width: 50%;
+}
+
+.lm-testi-angle-section{
+	position: relative;
+	height: 652px;
+	display: flex;
+}
+
+.lm-testi-angle-sec-des-cntlr{
+	width: 70%;
+	background-position: right center!important;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-right: 70px;
+	
+}
+.lm-testi-angle-sec-des-cntlr blockquote{
+	position: relative;
+	left: 10%;
+	max-width: 680px;
+}
+.lm-testi-angle-sec-des-cntlr blockquote i{
+	margin-bottom: 35px;
+}
+.lm-testi-angle-sec-des-cntlr blockquote p{
+	font-size: 30px;
+	line-height: 48px;
+	margin-bottom: 45px;
+}
+.lm-testi-angle-sec-des-cntlr blockquote strong{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+}
+.lm-testi-angle-sec-rgt-img{
+	width: 30%;
+	background-position: left center!important;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	height: 100%;
+}
+.lm-testi-angle-sec-logo{
+	position: absolute;
+	bottom: -75px;
+	z-index: 10;
+	right: 5%;
+}

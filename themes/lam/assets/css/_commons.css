@@ -21,15 +21,18 @@ body {
     font-size: 18px;
     line-height: 24px;
     font-family: 'Lora', serif;
+    font-weight: 400;
     /* font-family: 'Didot';
-    font-family: 'Big Caslon'; */
-    /*font-family: 'Merriweather', serif;*/
-    /*font-family: 'Archivo', sans-serif;*/
+    font-family: 'Big Caslon';
+    font-family: 'Archivo', sans-serif; 
+    font-family: 'Merriweather', serif;
+    */
 }
 p{
-	line-height: 1.2;
+	line-height: 1.7;
 	margin-bottom: 15px;
 }
+
 /*-- app gap use pattern --*/
 /*data-xxs = 575
 data-xs = 767
@@ -197,6 +200,12 @@ ul.sub-menu li:before,
 
 
 
+.svg-cntlr{
+	left: 0;
+	right: 0;
+    max-width: 100%;
+    width: 100%;
+}
 
 /**
 Selects
