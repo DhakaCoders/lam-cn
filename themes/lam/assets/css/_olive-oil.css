@@ -102,3 +102,24 @@
 .olive-lam-inr-desc ul{
 	padding-top: 20px;
 }
+.google-map-cntlr{
+	position: relative;
+	z-index: 1;
+}
+.google-map-bg{
+	z-index: 11;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-background: radial-gradient(50.43% 58.1% at 52.95% 38.84%, rgba(46, 35, 35, 0) 0%, rgba(37, 27, 28, 0.27) 0.01%, #251B1C 100%);
+	-ms-background: radial-gradient(50.43% 58.1% at 52.95% 38.84%, rgba(46, 35, 35, 0) 0%, rgba(37, 27, 28, 0.27) 0.01%, #251B1C 100%);
+	-moz-background: radial-gradient(50.43% 58.1% at 52.95% 38.84%, rgba(46, 35, 35, 0) 0%, rgba(37, 27, 28, 0.27) 0.01%, #251B1C 100%);
+	background: radial-gradient(50.43% 58.1% at 52.95% 38.84%, rgba(46, 35, 35, 0) 0%, rgba(37, 27, 28, 0.27) 0.01%, #251B1C 100%);
+}
+.lm-testi-angle-sec-des-cntlr blockquote{
+	position: relative;
+	left: 10%;
+	max-width: 680px;
+}
