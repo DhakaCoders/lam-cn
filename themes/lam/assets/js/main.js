@@ -179,6 +179,7 @@ function leftWidth() {
   var leftSideWidth = (windowWidth - container ) / 2;
   $(".lm-testi-angle-sec-des-cntlr blockquote").css({left : leftSideWidth});
 };
+leftWidth();
 $(window).resize(function() {
     leftWidth();
 });
