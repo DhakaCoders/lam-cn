@@ -188,6 +188,7 @@
 }
 .lam-about-us-gallery-ctlr:hover .lam-about-us-gallery-item{
 	transform: scale(1.05);
+	border-radius: 20px!important;
 }
 
 .lam-about-us-gallery-btm-logo{
