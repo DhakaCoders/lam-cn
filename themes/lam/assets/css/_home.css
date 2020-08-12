@@ -104,7 +104,14 @@
 	width: 200px;
 	height: 56px;
 }
-
+.hmaud-btn a:hover{
+	background: transparent;
+}
+.hmaud-btn-2 a:hover{
+	background: transparent;
+	border-color: #DC6A2E;
+	color: #fff;
+}
 .hmaud-btn-2 a{
 	background: transparent;
 	border-color: #A6948F;
@@ -194,6 +201,10 @@
     color: #fff;
     width: 200px;
     height: 56px;
+}
+.lm-btn:hover{
+	background: transparent;
+	color: #fff;
 }
 .hm-grd-item-des p{
 	margin-bottom: 35px;
