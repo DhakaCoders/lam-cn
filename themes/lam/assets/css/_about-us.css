@@ -182,6 +182,13 @@
 	width: 100%;
 	border-radius: 20px;
 	opacity: 0.6;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.lam-about-us-gallery-ctlr:hover .lam-about-us-gallery-item{
+	transform: scale(1.05);
+	border-radius: 20px!important;
 }
 
 .lam-about-us-gallery-btm-logo{
