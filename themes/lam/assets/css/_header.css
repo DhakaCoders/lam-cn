@@ -3,10 +3,8 @@
 	padding: 18px 0;
 }
 .hdr-rgt{
+	padding-top: 60px;
 	float: right;
-}
-.hdr-rgt{
-	padding-top: 65px;
 }
 .main-nav{
 	float: left;
@@ -25,7 +23,7 @@ nav.main-nav ul{
 nav.main-nav ul li{
 	float: left;
 	padding: 0 24px;
-    padding-bottom: 54px;
+    padding-bottom: 59px;
 }
 nav.main-nav ul li:first-child{
 	padding-left: 0;
@@ -145,6 +143,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 .hdr-social ul > li > a{
 	color: #f3f0eb;
 	font-size: 25px;
+	font-family: "Font Awesome 5 Brands";
 }
 .hdr-social ul > li > a:hover{
 	color: #B78454;
