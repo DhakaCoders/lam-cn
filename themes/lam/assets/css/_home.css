@@ -372,7 +372,20 @@ body.home .lam-about-us-tradition-sec{
 	padding-top: 190px;
 }
 
-.two-sec-cntrl{
+.two-sec-cntrl {
+    position: relative; 
+}
+
+.lines{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 759px;
+	background-repeat: no-repeat!important;
+	bottom: 0;
+	z-index: 1;
+}
+.cmn-z-index{
 	position: relative;
-	background: url(../images/lines.svg);
+	z-index: 2;
 }
