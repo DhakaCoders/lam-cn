@@ -3,6 +3,63 @@
 	max-width: 558px;
 	width: 100%;
 }
+.hm-bnr-fea-img-cntlr{
+	position: relative;
+	padding: 192px 0 95px 230px;
+}
+.hm-bnr-graphics-img{
+	position: absolute;
+	top: 135px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat!important;
+	background-size: 100% auto!important;
+}
+.hm-bnr-circle-cntlr{
+	position: relative;
+	width: 548px;
+	height: 389px;
+	border-radius: 50%;
+	background: #c48c6f;
+	color: #fff;
+}
+.cirle-xs-size{
+	position: absolute;
+	left: 100px;
+	top: -15px;
+	width: 23.51px;
+	height: 19.31px;
+	background: linear-gradient(0deg, #C48C6F, #C48C6F), #DC6A2E;
+	transform: rotate(15.24deg);
+	border-radius: 50%;
+}
+
+
+.cirle-xs-size-2{
+	position: absolute;
+	left: 100px;
+	bottom: -15px;
+	width: 29.81px;
+	height: 24.48px;
+	background: #A6745A;
+	transform: rotate(-2.27deg);
+	border-radius: 50%;
+}
+
+.cirle-md-size{
+	position: absolute;
+	left: 100px;
+	bottom: -15px;
+	width: 241px;
+	height: 171px;
+	background: #A6745A;
+	transform: rotate(20.72deg);
+	border-radius: 50%;
+}
+
+
+
 .main-bnr-logo-xlg{
 	padding-bottom: 42px;
 }

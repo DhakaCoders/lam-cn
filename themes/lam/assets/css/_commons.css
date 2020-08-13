@@ -346,7 +346,7 @@ ul li{
     position: absolute;
     left: 0;
     top: 18px;
-    background: url(../images/list-icon.png);
+    background: url(../images/list-icon.svg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 14px;
