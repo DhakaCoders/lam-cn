@@ -240,6 +240,14 @@
 
 .lam-about-us-generation-sec{
 	padding: 190px 0 0 0;
+	position: relative;
+}
+.circle-about-page{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: -165px;
+
 }
 .lam-about-us-generation-sec-inr{
 	display: flex;
