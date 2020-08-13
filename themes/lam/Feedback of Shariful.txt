@@ -5,17 +5,17 @@ Desktop--->>
 1. https://prnt.sc/tyyjxd----done
 	h2 daw, banner a h1 use korechi , tahole porer hading h2 use korte hobe, jodi font ta khub choto hoto tahole h3 use korte partam
 
-2. https://prnt.sc/tyyp8q
+2. https://prnt.sc/tyyp8q----done
 	ai icon ta .svg hobe, common a change korte hobe
 
-3. https://prnt.sc/tyzzji
+3. https://prnt.sc/tyzzji-----done
 	map ar upore asbe, r radius bg ta missing
 
 4. https://prnt.sc/tz008t----done
 	img div ta akta parent div a nite hobe,
 	margin ar bodole padding dite hobe, width 50% a thakbe
 
-5. https://prnt.sc/tz008t
+5. https://prnt.sc/tz008t----done
 	boro screen a img div ar  height barate hobe, 2000px ar upore dite pari
 
 
@@ -23,7 +23,7 @@ Contact
 ----------------------
 Desktop--->>
 
-1. https://prnt.sc/tz0xdq
+1. https://prnt.sc/tz0xdq---done
 	ai redius bg ta missing, ata alada kete bosate hobe
 
 2.https://prnt.sc/tz100w----done
@@ -39,7 +39,7 @@ Desktop--->>
 4. https://prnt.sc/tz1862----done
 	width ta % cal kore daw.
 
-5. https://prnt.sc/tz19m6
+5. https://prnt.sc/tz19m6----done
 	gap dekha jasche
 
 6. https://prnt.sc/tz1ce7----done

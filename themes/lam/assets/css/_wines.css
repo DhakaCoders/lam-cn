@@ -74,22 +74,23 @@
 .wines-grid-lines-top{
 	z-index: 1;
 	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
+	height: 1042px;
+    top: 621px;
 	left: 0;
 	right: 0;
-	bottom: 0;
 	background: url('../images/lines-v2.svg');
+	background-repeat: repeat-x;
 }
-/* .wines-grid-lines-btm{
+.wines-grid-lines-btm{
 	z-index: 1;
 	position: absolute;
-	bottom: 0;
+    height: 1150px;
+    bottom: 950px;
 	left: 0;
 	right: 0;
 	background: url('../images/lines-v2.svg');
-} */
+	background-repeat: repeat-x;
+}
 .wines-grid-cntlr{
 	z-index: 2;
 }
@@ -127,8 +128,21 @@
 .wines-grid-cntlr > ul > li:nth-child(2n+2) .wines-grid-item-desc{
 	order: 1;
 }
+.wines-grid-item-desc > p{
+	margin-bottom: 40px;
+}
+.wines-grid-item-sub-title{
+    margin-bottom: 24px;
+}
+.wines-grid-item-title{
+	font-size: 60px;
+	margin-bottom: 32px;
+}
 .wines-grid-item-desc strong{
 	font-weight: 700;
+}
+.wines-grid-item-desc strong p{
+	margin-bottom: 20px;
 }
 .wines-grid-blockquote{
 	padding: 90px 0 75px 65px;
