@@ -8,4 +8,19 @@ Desktop--->>
 2. https://prnt.sc/tyyp8q
 	ai icon ta .svg hobe, common a change korte hobe
 
-3.
+3. https://prnt.sc/tyzzji
+	map ar upore asbe, r radius bg ta missing
+
+4. https://prnt.sc/tz008t
+	img div ta akta parent div a nite hobe,
+	margin ar bodole padding dite hobe, width 50% a thakbe
+
+5. https://prnt.sc/tz008t
+	boro screen a img div ar  height barate hobe, 2000px ar upore dite pari
+
+
+Contact
+----------------------
+Desktop--->>
+
+1. 
