@@ -59,18 +59,11 @@
 .cfls-email a i,
 .cfls-phone a i{
 	position: absolute;
-	top: 12px;
+	top: 0px;
 	left: 0;
-	font-size: 15px;
 }
-.cfls-phone a i{
-	transform: rotate(90deg);
-}
-.fa-map-marker-alt:before,
-.fa-envelope:before,
-.fa-phone:before {
-    color: #B78454;
-}
+
+
 
 .cfls-img{
 	min-height: 422px;
