@@ -1,12 +1,12 @@
 .contact-form-sec{
-	padding: 150px 0 100px;
+	padding: 150px 0 110px;
 	position: relative;
 	overflow: hidden;
 }
 .contact-form-sec:before{
 	content: "";
 	position: absolute;
-	top: 100%;
+	top: 99%;
 	left: 0;
 	background: #B78454;
 	height: 10px;
