@@ -7,7 +7,9 @@
 }
 
 @media(max-width: 1299px){
-
+	.container{
+		max-width: 1300px;
+	}
 }
 
 @media(max-width: 1199px){

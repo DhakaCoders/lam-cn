@@ -47,11 +47,51 @@
 }
 .lam-wines-section{
 	padding: 145px 0 65px 0;
+	position: relative;
+}
+.lam-wines-bg-color{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	background-color: linear-gradient(360deg, rgba(46, 35, 35, 0) -36.24%, rgba(37, 27, 28, 0.27) -36.22%, #251B1C 97.67%);
 }
-
+.hm-grds .hm-grd-item{
+	display: flex;
+	align-items: center;
+}
+.hm-grd-item-fea-img{
+	order: 2;
+}
+.hm-grd-item-des{
+	order: 1;
+}
 .wines-grid-sec{
-	padding-bottom: 130px;
+	padding-bottom: 80px;
+	position: relative;
+}
+.wines-grid-lines-top{
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../images/lines-v2.svg');
+}
+/* .wines-grid-lines-btm{
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url('../images/lines-v2.svg');
+} */
+.wines-grid-cntlr{
+	z-index: 2;
 }
 .wines-grid-cntlr > ul{
 	padding: 0;
@@ -63,11 +103,12 @@
 }
 .wines-grid-cntlr > ul > li{
 	padding: 0;
+	margin: 50px 0;
 }
 .wines-grid-item{
 	display: flex;
 	align-items: center;
-
+	margin-bottom: 50px;
 }
 .wines-grid-item-fea-img{
 	max-width: 50%;
