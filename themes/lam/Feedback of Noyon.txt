@@ -1,0 +1,49 @@
+Header
+----------------------
+Desktop--->>
+
+
+1. https://prnt.sc/tz1z81
+	niche asle hover color ta active hoye thakbe
+
+2. https://prnt.sc/tz2119
+   https://prnt.sc/tz21z9
+	menu te amara chaile nijer moto class dite parbona, WP ja class dey aikhane tai use korte hobe
+	aikhane .current-menu-item class ta daw
+
+
+3. https://prnt.sc/tz23hh
+	ai code gulo a tag a use koro, bcoz puro tate click kora jayna
+
+4. https://prnt.sc/tz2rz7
+	display inline bolck hobe
+
+
+
+
+Footer
+----------------------
+Desktop--->>
+
+1. https://prnt.sc/tz24nx
+	header motoi aikhane class change hobe
+
+
+2. https://prnt.sc/tz2670
+	ata js diye update korte hobe	
+
+
+3. https://prnt.sc/tz2b7n
+	mHc use kore flex use korte hobe, V and H center hobe
+
+
+4. https://prnt.sc/tz2bv5
+	ai gap gulo mileni
+
+
+Olive Oil
+----------------------
+Desktop--->>
+
+1. https://prnt.sc/tz20do
+	ata akta heading hobe, h5 or 6 use korte paro
