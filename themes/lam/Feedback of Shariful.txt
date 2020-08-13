@@ -8,4 +8,41 @@ Desktop--->>
 2. https://prnt.sc/tyyp8q
 	ai icon ta .svg hobe, common a change korte hobe
 
-3.
+3. https://prnt.sc/tyzzji
+	map ar upore asbe, r radius bg ta missing
+
+4. https://prnt.sc/tz008t
+	img div ta akta parent div a nite hobe,
+	margin ar bodole padding dite hobe, width 50% a thakbe
+
+5. https://prnt.sc/tz008t
+	boro screen a img div ar  height barate hobe, 2000px ar upore dite pari
+
+
+Contact
+----------------------
+Desktop--->>
+
+1. https://prnt.sc/tz0xdq
+	ai redius bg ta missing, ata alada kete bosate hobe
+
+2.https://prnt.sc/tz100w
+	ai class 2 ta change hobe,
+	amon hobe
+	.firstNameField
+	.lastNameField
+
+3. https://prnt.sc/tz1612
+	img ta aktu japsa japsa lage,  img ta .png bosay dekhio to, thik hoy naki
+
+
+4. https://prnt.sc/tz1862
+	width ta % cal kore daw.
+
+5. https://prnt.sc/tz19m6
+	gap dekha jasche
+
+6. https://prnt.sc/tz1ce7
+	link hobe aigulo, span ar vitore a tag nao
+
+
