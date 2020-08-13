@@ -27,12 +27,12 @@
     -moz-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
 }
-.ftr-nav-inr ul li a:hover,
-.ftr-nav-inr ul li .active{
+.ftr-nav-inr ul li:hover a,
+.ftr-nav-inr ul li.current-menu-item a{
 	color: #B78454;
 }
-.ftr-nav-inr ul li a:hover:after,
-.ftr-nav-inr ul li .active:after{
+.ftr-nav-inr ul li:hover a:after,
+.ftr-nav-inr ul li.current-menu-item a:after{
 	content: "";
     position: absolute;
     right: -2px;
