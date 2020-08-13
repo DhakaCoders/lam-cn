@@ -21,7 +21,7 @@ Desktop--->>
 
 
 
-Footer
+Olive Oil
 ----------------------
 Desktop--->>
 
@@ -41,7 +41,15 @@ Desktop--->>
 	ai gap gulo mileni
 
 
-Olive Oil
+
+
+1. https://prnt.sc/tz20do
+	ata akta heading hobe, h5 or 6 use korte paro
+
+
+
+
+Wines
 ----------------------
 Desktop--->>
 
@@ -56,3 +64,28 @@ Desktop--->>
 		1.Big Caslon regular font nei
 		2.Didot medium font nei
 	}
+
+1. https://prnt.sc/tz5bv4
+	gap ta mileni, besi hoyeche
+
+
+2. https://prnt.sc/tz5des
+		position relative koi?
+
+
+3. https://prnt.sc/tz5e1x
+	sprite hobe
+
+
+4. https://prnt.sc/tz5ev4
+	p ar vitore strong tag hobe
+
+
+5. https://prnt.sc/tz5gp4
+	1st and last child off korar dorkar nai, ata jodi off na kori responsive a easy hobe
+
+
+6. https://prnt.sc/tz5im7
+	gap besi mone hosche
+
+
