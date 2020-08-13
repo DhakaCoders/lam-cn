@@ -4,7 +4,7 @@ Desktop--->>
 
 
 1. https://prnt.sc/tz1z81
-	niche asle hover color ta active hoye thakbe// *** baki ace
+	niche asle hover color ta active hoye thakbe
 
 2. https://prnt.sc/tz2119
    https://prnt.sc/tz21z9
@@ -29,11 +29,11 @@ Desktop--->>
 	header motoi aikhane class change hobe
 
 
-2. https://prnt.sc/tz2670// *** baki ace
+2. https://prnt.sc/tz2670
 	ata js diye update korte hobe	
 
 
-3. https://prnt.sc/tz2b7n*** baki ace
+3. https://prnt.sc/tz2b7n//*** baki ace
 	mHc use kore flex use korte hobe, V and H center hobe
 
 
