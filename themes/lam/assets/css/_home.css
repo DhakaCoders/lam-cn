@@ -37,6 +37,7 @@
 	background: linear-gradient(0deg, #C48C6F, #C48C6F), #DC6A2E;
 	transform: rotate(15.24deg);
 	border-radius: 50%;
+	z-index: 5;
 }
 
 
@@ -49,6 +50,7 @@
     background: #A6745A;
     transform: rotate(-2.27deg);
     border-radius: 50%;
+    z-index: 4;
 }
 .cirle-md-size{
 	position: absolute;
@@ -59,6 +61,7 @@
 	background: #A6745A;
 	transform: rotate(20.72deg);
 	border-radius: 50%;
+	z-index: 4;
 
 }
 .hmbcc-sub-title{
@@ -138,14 +141,14 @@
 .hm-about-us-section{
 	position: relative;
 	padding: 380px 0 0;
-	margin-top: 300px;
+	margin-top: 0;
 }
 .hm-about-us-top-angle{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 70%;
-	z-index: 30;
+	top: -91px;
+	z-index: 1;
 	
 }
 
