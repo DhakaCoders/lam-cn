@@ -23,4 +23,26 @@ Contact
 ----------------------
 Desktop--->>
 
-1. 
+1. https://prnt.sc/tz0xdq
+	ai redius bg ta missing, ata alada kete bosate hobe
+
+2.https://prnt.sc/tz100w
+	ai class 2 ta change hobe,
+	amon hobe
+	.firstNameField
+	.lastNameField
+
+3. https://prnt.sc/tz1612
+	img ta aktu japsa japsa lage,  img ta .png bosay dekhio to, thik hoy naki
+
+
+4. https://prnt.sc/tz1862
+	width ta % cal kore daw.
+
+5. https://prnt.sc/tz19m6
+	gap dekha jasche
+
+6. https://prnt.sc/tz1ce7
+	link hobe aigulo, span ar vitore a tag nao
+
+
