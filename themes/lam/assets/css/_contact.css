@@ -1,6 +1,7 @@
 .contact-form-sec{
 	padding: 150px 0 100px;
 	position: relative;
+	overflow: hidden;
 }
 .contact-form-sec:before{
 	content: "";
@@ -9,11 +10,11 @@
 	left: 0;
 	background: #B78454;
 	height: 10px;
-	width: 72%;
+	width: 75%;
 }
 .circle-contact-page{
 	position: absolute;
-	top: 0;
+	bottom: 330px;
 	left: 0;
 }
 
@@ -73,7 +74,7 @@
 .cfls-img{
 	min-height: 422px;
 	border-radius: 20px;
-	opacity: 0.6;
+	opacity: 0.9;
 	margin-right: 100px;
 }
 
@@ -253,7 +254,7 @@
 
 .lam-table-ctlr{
 	border: 4px solid rgba(255, 255, 255, 0.05);
-	border-radius: 10px!important;
+	border-radius: 14px!important;
 }
 .contact-table-sec-item .table thead{
 	background: rgba(166, 148, 143, 0.12);

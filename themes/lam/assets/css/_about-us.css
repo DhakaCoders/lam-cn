@@ -239,19 +239,23 @@
 
 
 .lam-about-us-generation-sec{
-	padding: 190px 0 0 0;
+	padding: 190px 0 165px 0;
 	position: relative;
+	margin-bottom: -165px;
+	overflow: hidden;
 }
 .circle-about-page{
 	position: absolute;
-	top: 0;
 	right: 0;
 	bottom: -165px;
+	z-index: 12;
 
 }
 .lam-about-us-generation-sec-inr{
 	display: flex;
 	align-items: center;
+	position: relative;
+	z-index: 13;
 }
 .lam-about-us-generation-fea-img{
 	float: left;
@@ -295,6 +299,17 @@
 .lam-about-us-generation-des strong{
 	font-weight: 700;
 	text-transform: capitalize;
+}
+
+
+
+
+
+
+@media(min-width: 2900px){
+	.lam-about-us-gallery-ctlr{
+		height: 523px;
+	}
 }
 
 
