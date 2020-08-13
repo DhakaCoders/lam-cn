@@ -5,6 +5,7 @@ var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers
 
 var container = $(".container").width();
 var leftSideWidth = (windowWidth - container ) / 2;
+
 var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
@@ -175,7 +176,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
     }
   }
 
-  function leftWidth() {
+
+
+/*  function leftWidth() {
     var container = $(".container").width();
     var leftSideWidth = (windowWidth - container ) / 2;
     $(".map-side-add").css({left : leftSideWidth});
@@ -183,7 +186,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   leftWidth();
   $(window).resize(function() {
     leftWidth();
-  });
+  });*/
     /*End of Noyon*/
 
 
@@ -201,12 +204,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-$(".lm-testi-angle-sec-des-cntlr blockquote").css({left : leftSideWidth});
+$(".lm-testi-angle-sec-des-cntlr blockquote, .map-side-add").css({left : leftSideWidth});
 
 function leftWidth() {
   var container = $(".container").width();
   var leftSideWidth = (windowWidth - container ) / 2;
-  $(".lm-testi-angle-sec-des-cntlr blockquote").css({left : leftSideWidth});
+  $(".lm-testi-angle-sec-des-cntlr blockquote, .map-side-add").css({left : leftSideWidth});
 };
 leftWidth();
 $(window).resize(function() {
