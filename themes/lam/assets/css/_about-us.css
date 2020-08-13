@@ -23,8 +23,9 @@
 	font-size: 124px;
 	line-height: 1;
 	margin-bottom: 20px;
-	font-weight: 500;
-	font-family: 'Didot';
+	font-weight: 300;
+	/*font-family: 'Didot';*/
+	font-family: 'GFS Didot', serif;
 	text-transform: capitalize;
 }
 
