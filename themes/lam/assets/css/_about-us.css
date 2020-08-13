@@ -175,6 +175,7 @@
 	position: relative;
 	height: 423px;
 	overflow: hidden;
+	border-radius: 20px;
 }
 
 .lam-about-us-gallery-item{
@@ -186,9 +187,8 @@
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 }
-.lam-about-us-gallery-ctlr:hover .lam-about-us-gallery-item{
+.lam-about-us-gallery-ctlr a:hover .lam-about-us-gallery-item{
 	transform: scale(1.05);
-	border-radius: 20px!important;
 }
 
 .lam-about-us-gallery-btm-logo{
@@ -196,6 +196,7 @@
 	bottom: -60px;
 	left: 50%;
 	transform: translateX(-50%);
+	z-index: 11;
 }
 
 
