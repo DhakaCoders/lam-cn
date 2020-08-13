@@ -52,26 +52,26 @@
 	display: flex;
 	align-items: center;
 }
-.lam-about-us-grd-item-fea-img{
-	min-height: 715px;
+.lam-about-us-grd-item-fea-img-ctlr{
 	width: 50%;
 	order: 2;
+}
+.lam-about-us-grd-item-fea-img{
+	min-height: 715px;
 	border-radius: 20px;
 }
 .lam-about-us-grd-item-des{
 	width: 50%;
 	order: 1;
-	padding-right: 50px;
+	padding-right: 70px;
 }
 
-.lam-about-us-grd-sec-inr > ul > li:nth-child(2n+2) .lam-about-us-grd-item-fea-img{
+.lam-about-us-grd-sec-inr > ul > li:nth-child(2n+2) .lam-about-us-grd-item-fea-img-ctlr{
 	order: 1;
-	margin-right: 50px;
-	width: 48%;
+	padding-right: 70px;
 }
 .lam-about-us-grd-sec-inr > ul > li:nth-child(2n+2) .lam-about-us-grd-item-des{
 	order: 2;
-	width: 52%;
 }
 
 
