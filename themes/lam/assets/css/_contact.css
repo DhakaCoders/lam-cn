@@ -259,12 +259,17 @@
 }
 .contact-table-sec-item .table thead{
 	background: rgba(166, 148, 143, 0.12);
-	border-radius: 10px!important;
 }
 
 .contact-table-sec-item .table thead th{
 	padding: 0;
 	border: none;
+}
+.contact-table-sec-item .table thead th:first-child{
+	border-radius: 10px 0 0 0;
+}
+.contact-table-sec-item .table thead th:last-child{
+	border-radius: 0 10px 0 0;
 }
 .contact-table-sec-item .table thead th span{
 	display: block;
