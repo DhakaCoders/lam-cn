@@ -4,8 +4,9 @@
 	width: 100%;
 }
 .hm-bnr-fea-img-cntlr{
-	position: relative;
-	padding: 192px 0 120px 230px;
+    position: relative;
+    padding: 192px 0 140px 230px;
+    z-index: 20;
 }
 .hm-bnr-graphics-img{
 	position: absolute;
@@ -14,7 +15,7 @@
 	right: 0;
 	bottom: 0;
 	background-repeat: no-repeat!important;
-	margin-right: -144px;
+	margin-right: -49px;
 	background-size: 100% auto!important;
 }
 .hm-bnr-circle-cntlr{
@@ -29,22 +30,22 @@
 	justify-content: center;
 }
 .cirle-xs-size{
-	position: absolute;
-	left: 100px;
-	top: -15px;
-	width: 23.51px;
-	height: 19.31px;
-	background: linear-gradient(0deg, #C48C6F, #C48C6F), #DC6A2E;
-	transform: rotate(15.24deg);
-	border-radius: 50%;
-	z-index: 5;
+    position: absolute;
+    left: 119px;
+    top: 2px;
+    width: 23.51px;
+    height: 19.31px;
+    background: linear-gradient(0deg, #C48C6F, #C48C6F), #DC6A2E;
+    transform: rotate(15.24deg);
+    border-radius: 50%;
+    z-index: 5;
 }
 
 
 .cirle-xs-size-2 {
     position: absolute;
-    left: 261px;
-    bottom: -34px;
+    left: 237px;
+    bottom: -41px;
     width: 29.81px;
     height: 24.48px;
     background: #A6745A;
@@ -52,17 +53,16 @@
     border-radius: 50%;
     z-index: 4;
 }
-.cirle-md-size{
-	position: absolute;
-	left: 7px;
-	bottom: -63px;
-	width: 241px;
-	height: 171px;
-	background: #A6745A;
-	transform: rotate(20.72deg);
-	border-radius: 50%;
-	z-index: 4;
-
+.cirle-md-size {
+    position: absolute;
+    left: 4px;
+    bottom: -44px;
+    width: 241px;
+    height: 171px;
+    background: #A6745A;
+    transform: rotate(20.72deg);
+    border-radius: 50%;
+    z-index: 4;
 }
 .hmbcc-sub-title{
 	display: block;
@@ -70,6 +70,7 @@
 	line-height: 24px;
 	font-family: 'Big Caslon';
 	text-align: center;
+	margin-bottom: 10px;
 }
 .hmbcc-sub-title span{
 	text-transform: uppercase;
@@ -81,10 +82,11 @@
 	font-family: 'Lora', serif;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 70px;
 }
 .hm-bnr-btl {
     position: absolute;
-    top: -93px;
+    top: -116px;
     left: -291px;
     z-index: 5;
 }
@@ -138,6 +140,24 @@
 }
 
 
+.scroll-down-direction{
+	position: absolute;
+	left: 50%;
+	top: 49px;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	background: #B78454;
+	border-radius: 100%;
+	z-index: 10;
+	cursor: pointer;
+}
+
 .hm-about-us-section{
 	position: relative;
 	padding: 380px 0 0;
@@ -147,7 +167,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: -91px;
+	top: -134px;
 	z-index: 1;
 	
 }
