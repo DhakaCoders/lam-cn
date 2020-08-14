@@ -103,7 +103,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a{
 }
 nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li:hover a,
 nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.current-menu-item a{
-	color: #000;
+	color: #B78454;
 }
 
 /*  */
@@ -116,7 +116,7 @@ nav.main-nav ul.sub-menu li:after {
     bottom: 0;
     width: 2px;
     height: 0;
-    background: #000062;
+    background: #B78454;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
