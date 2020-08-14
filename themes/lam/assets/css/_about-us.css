@@ -257,10 +257,11 @@
 	position: relative;
 	z-index: 13;
 }
-.lam-about-us-generation-fea-img{
+.lam-about-us-generation-fea-img-ctlr{
 	float: left;
 	width: 40%;
 	min-height: 720px;
+	height: 100%;
 	border-radius: 20px;
 }
 .lam-about-us-generation-des{
@@ -268,7 +269,11 @@
 	width: 60%;
 	padding-left: 90px;
 }
-
+.lam-about-us-generation-fea-img{
+	min-height: 720px;
+	height: 100%;
+	border-radius: 20px;
+}
 .lam-about-us-generation-des-title{
 	display: block;
 	font-size: 48px;
@@ -310,6 +315,310 @@
 	.lam-about-us-gallery-ctlr{
 		height: 523px;
 	}
+}
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+	.page-banner-des {
+	    padding-top: 150px;
+	    padding-bottom: 130px;
+	}
+	.page-banner-title{
+		font-size: 100px;
+	}
+	.lam-about-us-grd-sec {
+	    padding: 120px 0 0 0;
+	}
+	.lam-about-us-grd-item-des-title{
+		font-size: 57px;
+	}
+	.lam-about-us-grd-item-des{
+		padding-right: 50px;
+	}
+	.lam-about-us-tradition-sec {
+	    padding-top: 220px;
+	    padding-bottom: 180px;
+	}
+	.lab-about-us-trdt-ambition-title {
+	    font-size: 57px;
+	}
+	.lab-about-us-trdt-wines span{
+		font-size: 75px;
+	}
+	.lam-about-us-generation-sec{
+		padding: 160px 0 165px 0;
+	}
+	.lam-about-us-generation-des {
+	    padding-left: 70px;
+	}
+	.lam-about-us-generation-des-title{
+		font-size: 45px;
+	}
+}
+	
+
+@media(max-width: 1199px){
+	.page-banner-des {
+	    padding-top: 120px;
+	    padding-bottom: 110px;
+	}
+	.page-banner-title {
+	    font-size: 85px;
+	}
+	.lam-about-us-grd-sec {
+	    padding: 100px 0 0 0;
+	}
+	.lam-about-us-grd-sec-inr > ul > li {
+	    padding: 0;
+	    padding-bottom: 60px;
+	}
+	.lam-about-us-grd-item-des {
+	    padding-right: 30px;
+	}
+	.lam-about-us-grd-item-des-title {
+	    font-size: 52px;
+	    margin-bottom: 25px;
+	}
+	.lam-about-us-grd-item-des p {
+	    margin-bottom: 25px;
+	}
+	.lam-about-us-grd-sec-inr > ul > li:nth-child(2n+2) .lam-about-us-grd-item-fea-img-ctlr {
+	    padding-right: 50px;
+	}
+	.lam-about-us-gallery-sec ul li {
+	    width: 33.3333%;
+	    padding-bottom: 30px;
+	}
+	.lam-about-us-gallery-btm-logo{
+		bottom: -25px;
+	}
+	.lam-about-us-tradition-sec {
+	    padding-top: 190px;
+	    padding-bottom: 160px;
+	}
+	.lab-about-us-trdt-ambition {
+	    text-align: center;
+	    padding-bottom: 60px;
+	}
+	.lab-about-us-trdt-ambition-title {
+	    font-size: 53px;
+	    margin-bottom: 25px;
+	}
+	.lab-about-us-trdt-wines span {
+	    font-size: 70px;
+	}
+	.lab-about-us-trdt-wines-title{
+		font-size: 32px;
+	}
+	.lam-about-us-generation-sec {
+	    padding: 129px 0 130px 0;
+	    margin-bottom: -130px;
+	}
+	.lam-about-us-generation-des {
+	    padding-left: 50px;
+	}
+	.lam-about-us-generation-des-title {
+	    font-size: 40px;
+	    margin-bottom: 25px;
+	}
+	.lam-about-us-generation-des p {
+	    font-size: 25px;
+	    margin-bottom: 30px;
+	}
+
+}
+
+@media(max-width: 991px){
+	.page-banner-des {
+	    padding-top: 100px;
+	    padding-bottom: 90px;
+	}
+	.page-banner-title {
+	    font-size: 70px;
+	}
+	.lam-about-us-grd-sec {
+	    padding: 85px 0 0 0;
+	}
+	.lam-about-us-grd-item {
+	    display: initial;
+	}
+	.lam-about-us-grd-item-fea-img-ctlr {
+	    width: 100%;
+	    order: initial;
+	}
+	.lam-about-us-grd-item-des {
+	    padding-right: 0;
+	    width: 100%;
+    	order: initial;
+	}
+	.lam-about-us-grd-item-fea-img{
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.lam-about-us-grd-item-des-title {
+	    font-size: 45px;
+	    margin-bottom: 20px;
+	}
+	.lam-about-us-grd-item-des p {
+	    margin-bottom: 20px;
+	}
+	.lam-about-us-gallery-sec ul li {
+	    width: 50%;
+	    padding-bottom: 30px;
+	}
+	.lam-about-us-gallery-btm-logo {
+	    bottom: -15px;
+	}
+	.lam-about-us-tradition-sec {
+	    padding-top: 160px;
+	    padding-bottom: 130px;
+	}
+	.lab-about-us-trdt-ambition {
+	    padding-bottom: 50px;
+	}
+	.lab-about-us-trdt-ambition-title {
+	    font-size: 47px;
+	    margin-bottom: 20px;
+	}
+	.lab-about-us-trdt-ambition p br{
+		display: none;
+	}
+	.lab-about-us-trdt-wines-title {
+	    font-size: 28px;
+	}
+	.lam-about-us-generation-sec {
+	    padding: 100px 0 100px 0;
+	    margin-bottom: -100px;
+	}
+	.circle-about-page {
+	    bottom: -140px;
+	}
+	.lam-about-us-generation-sec-inr {
+	    display: block;
+	}
+	.lam-about-us-generation-fea-img-ctlr {
+	    width: 100%;
+	}
+	.lam-about-us-generation-des {
+	    padding-left: 0;
+	    width: 100%;
+	}
+	.lam-about-us-generation-fea-img{
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.lam-about-us-generation-des-title {
+	    font-size: 35px;
+	    margin-bottom: 20px;
+	}
+	.lam-about-us-generation-des p {
+	    font-size: 22px;
+	    margin-bottom: 25px;
+	}
+	.lam-about-us-grd-item-fea-img {
+	    min-height: 500px;
+	}
+	.lam-about-us-generation-fea-img-ctlr {
+	    min-height: 520px;
+	}
+	.lam-about-us-generation-fea-img {
+	    min-height: 520px;
+	}
+	
+	
+}
+
+@media(max-width: 767px){
+	.page-banner-title {
+	    font-size: 55px;
+	}
+	.lam-about-us-grd-item-des-title {
+	    font-size: 40px;
+	    margin-bottom: 20px;
+	}
+	.lam-about-us-gallery-sec {
+	    padding-left: 0;
+	    padding-right: 0;
+	    margin-left: 20px;
+	    margin-right: 20px;
+	}
+	.lam-about-us-gallery-sec ul {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.lam-about-us-gallery-sec ul li {
+	    width: 100%;
+	    padding-left: 0;
+    	padding-right: 0;
+	}
+	.lam-about-us-gallery-ctlr{
+		max-width: 330px;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.lam-about-us-gallery-btm-logo {
+	    bottom: 0px;
+	}
+	.lam-about-us-tradition-sec {
+	    padding-top: 140px;
+	    padding-bottom: 100px;
+	}
+	.lab-about-us-trdt-ambition-title {
+	    font-size: 42px;
+	    margin-bottom: 20px;
+	}
+	.lam-about-us-generation-sec {
+	    padding: 100px 0 80px 0;
+	    margin-bottom: -80px;
+	}
+	.circle-about-page {
+	    bottom: -100px;
+	}
+}
+
+@media(max-width: 575px){
+	.page-banner-title {
+	    font-size: 40px;
+	}
+	.lam-about-us-generation-des-title {
+	    font-size: 30px;
+	}
+	.lam-about-us-generation-sec {
+	    padding: 100px 0 60px 0;
+	    margin-bottom: -60px;
+	}
+	.circle-about-page {
+	    bottom: -90px;
+	}
+}
+
+@media(max-width: 479px){
+	.lam-about-us-grd-item-des-link-left{
+		padding-bottom: 20px;
+	}
+	.lam-about-us-generation-des-title {
+	    font-size: 22px;
+	}
+	.circle-about-page {
+	    bottom: -60px;
+	}
+
+}
+
+@media(max-width: 359px){
+
 }
 
 
