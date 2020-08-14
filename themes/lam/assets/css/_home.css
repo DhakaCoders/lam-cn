@@ -387,6 +387,9 @@
 	background-size: cover!important;
 	height: 100%;
 }
+.lm-testi-angle-sec-rgt-img img{
+	display: none;
+}
 .lm-testi-angle-sec-logo{
 	position: absolute;
 	bottom: -75px;
@@ -453,6 +456,9 @@ body.home .lam-about-us-tradition-sec{
 	.lm-testi-angle-sec-des-cntlr blockquote i svg{
 		max-width: 130px;
 	}
+	.lm-testi-angle-sec-des-cntlr blockquote{
+		max-width: 606px;
+	}
 }
 
 @media(max-width: 1299px){
@@ -496,7 +502,8 @@ body.home .lam-about-us-tradition-sec{
 	    height: 501px;
 	}
 	.lm-testi-angle-sec-des-cntlr blockquote{
-		left: 15px!important;
+		left: initial!important;
+		padding-left: 15px;
 	}
 	.lm-testi-angle-sec-logo {
 	    max-width: 720px;
@@ -540,7 +547,46 @@ body.home .lam-about-us-tradition-sec{
 	.hm-about-us-des p {
 	    margin-bottom: 30px;
 	}
-
+	.lm-testi-angle-section{
+		display: block;
+		height: auto;
+	}
+	.lm-testi-angle-sec-des-cntlr{
+		width: 100%;
+	}
+	.lm-testi-angle-sec-rgt-img{
+		width: 100%;
+		background: transparent!important;
+		text-align: right;
+	}
+	.lm-testi-angle-sec-rgt-img img{
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	.lm-testi-angle-sec-bg-1-xs{
+		text-align: left;
+	}
+	.lm-testi-angle-sec-des-cntlr{
+		background: transparent!important;
+	}
+	.lm-testi-angle-sec-des-cntlr{
+		margin-top: -72px;
+	}
+	.lm-testi-angle-sec-des-cntlr blockquote{
+		margin-bottom: 55px;
+	}
+	.lm-testi-angle-sec-des-cntlr blockquote i svg {
+	    max-width: 109px;
+	    height: auto;
+	}
+	.lm-testi-angle-sec-des-cntlr {
+	    margin-top: -55px;
+	    padding-right: 170px;
+	}
+	.lm-testi-angle-sec-logo {
+	    max-width: 600px;
+	    bottom: -32px;
+	}
 }
 
 @media(max-width: 767px){
@@ -592,7 +638,17 @@ body.home .lam-about-us-tradition-sec{
 	    padding: 0 15px;
 	}
 	.lm-testi-angle-sec-des-cntlr blockquote{
-		left: 20px!important;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.lm-testi-angle-sec-des-cntlr blockquote i svg{
+		max-width: 90px;
+	}
+	.lm-testi-angle-sec-des-cntlr{
+		margin-top: -48px;
+	}
+	.lm-testi-angle-sec-logo{
+		display: none;
 	}
 }
 @media(max-width: 639px){
@@ -637,6 +693,9 @@ body.home .lam-about-us-tradition-sec{
 	}
 	.hm-grds-section{
 		padding-bottom: 0;
+	}
+	.lm-testi-angle-sec-des-cntlr{
+		padding-right: 0;
 	}
 }
 
