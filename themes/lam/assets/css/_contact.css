@@ -313,3 +313,141 @@
 
 
 
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+	.contact-form-sec {
+	    padding: 130px 0 110px;
+	}
+	.contact-form-entry-hdr-title{
+		font-size: 45px;
+	}
+	.contact-table-sec {
+	    padding-top: 80px;
+	}
+	.contact-table-title{
+		font-size: 37px;
+	}
+}
+	
+
+@media(max-width: 1199px){
+	.contact-form-sec {
+	    padding: 110px 0 100px;
+	}
+	.cfls-logo {
+	    margin-bottom: 30px;
+	}
+	.cfls-phone {
+	    padding-bottom: 45px;
+	}
+	.cfls-img {
+	    margin-right: 50px;
+	}
+	.contact-form-entry-hdr-title {
+	    font-size: 42px;
+	    margin-bottom: 25px;
+	}
+	.contact-table-sec {
+	    padding-top: 70px;
+	}
+	.contact-table-title {
+	    font-size: 32px;
+	    margin-bottom: 25px;
+	}
+	.contact-table-sec-item {
+	    padding-bottom: 70px;
+	}
+}
+
+@media(max-width: 991px){
+	.contact-form-sec {
+	    padding: 70px 0 80px;
+	}
+	.contact-form-left-sidebar {
+	    width: 100%;
+	}
+	.contact-form {
+	    width: 100%;
+	}
+	.cfls-logo {
+	    margin-bottom: 25px;
+	}
+	.cfls-adress {
+	    padding-bottom: 30px;
+	}
+	.cfls-phone {
+	    padding-bottom: 30px;
+	}
+	.cfls-img{
+		max-width: 350px;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.contact-form-entry-hdr-title {
+	    font-size: 38px;
+	    margin-bottom: 20px;
+	}
+	.contact-form-sec .wpforms-form .wpforms-field-container .wpforms-field {
+	    width: 100%;
+	}
+	.contact-table-sec {
+	    padding-top: 60px;
+	}
+	.contact-table-title {
+	    font-size: 28px;
+	    margin-bottom: 20px;
+	}
+	.contact-table-sec-item {
+	    padding-bottom: 50px;
+	}
+	.contact-table-sec-item .table thead th:first-child span {
+	    padding-left: 30px;
+	}
+	.contact-table-sec-item .table tbody td:first-child {
+	    padding-left: 30px;
+	}
+	.contact-table-sec-item .table tbody td:last-child {
+	    padding-right: 30px;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.contact-form-entry-hdr-title {
+	    font-size: 32px;
+	}
+	.contact-table-title {
+	    font-size: 25px;
+	}
+	.lam-table-ctlr{
+		overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space: nowrap;
+	}
+}
+
+@media(max-width: 575px){
+	.contact-table-title {
+	    font-size: 20px;
+	}
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}
+
+
+
