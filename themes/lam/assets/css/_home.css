@@ -456,6 +456,9 @@ body.home .lam-about-us-tradition-sec{
 	.lm-testi-angle-sec-des-cntlr blockquote i svg{
 		max-width: 130px;
 	}
+	.lm-testi-angle-sec-des-cntlr blockquote{
+		max-width: 606px;
+	}
 }
 
 @media(max-width: 1299px){
