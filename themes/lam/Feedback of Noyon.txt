@@ -53,17 +53,6 @@ Wines
 ----------------------
 Desktop--->>
 
-1. https://prnt.sc/tz20do
-	ata akta heading hobe, h5 or 6 use korte paro
-
-
-
-
-
-	nedded{
-		1.Big Caslon regular font nei
-		2.Didot medium font nei
-	}
 
 1. https://prnt.sc/tz5bv4
 	gap ta mileni, besi hoyeche
@@ -73,7 +62,7 @@ Desktop--->>
 		position relative koi?
 
 
-3. https://prnt.sc/tz5e1x
+3. https://prnt.sc/tz5e1x// *** baki ace
 	sprite hobe
 
 
