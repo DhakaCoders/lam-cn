@@ -594,6 +594,10 @@
 	}
 	.lam-about-us-generation-des-title {
 	    font-size: 30px;
+	    padding-top: 100px;
+	}
+	.lam-about-us-generation-des-title:before{
+		background-size: 90px 75px;
 	}
 	.lam-about-us-generation-sec {
 	    padding: 100px 0 60px 0;
