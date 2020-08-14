@@ -32,6 +32,9 @@ p{
 	line-height: 1.7;
 	margin-bottom: 15px;
 }
+strong{
+	font-weight: 700;
+}
 
 /*-- app gap use pattern --*/
 /*data-xxs = 575
