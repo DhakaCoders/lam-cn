@@ -179,7 +179,7 @@
 	}
 }
 @media(max-width: 991px){
-	br{
+	.wines-grid-blockquote > blockquote > p > br{
 		display: none;
 	}
 	.lam-wines-section{
