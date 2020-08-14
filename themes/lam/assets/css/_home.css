@@ -306,8 +306,8 @@
 
 .hmgid-title{
 	font-size: 114px;
-	line-height: 1.2;
-	margin: 0 0 30px 0;
+	line-height: 1;
+	margin: 0 0 27px 0;
 }
 .lm-btn{
 	display: flex;
@@ -419,18 +419,48 @@ body.home .lam-about-us-tradition-sec{
 }
 
 @media(max-width: 1399px){
-	
+	.hmgid-title{
+		font-size: 100px;
+	}
+	.hm-grds-sec-top-line{
+		height: 25px;
+	}
 }
 
 @media(max-width: 1299px){
-	
+	.hm-grds-section {
+	    padding: 150px 0 100px;
+	}
 }
 
 @media(max-width: 1199px){
 	.hm-about-us-des {
 	    padding-left: 30px;
 	}
-
+	.hm-grds-sec-top-line{
+		height: 20px;
+	}
+	.hm-grds-section {
+	    padding: 135px 0 65px;
+	}
+	body.home .lam-about-us-tradition-sec {
+	    padding-top: 115px;
+	}
+	.hmgid-title {
+	    font-size: 80px;
+	}
+	.hmgi-col{
+		padding: 0 30px;
+	}
+	.hm-grd-item {
+	    margin: 0 -30px;
+	}
+	.hmgid-sub-title{
+		font-size: 26px;
+	}
+	.hm-grd-item-fea-img {
+	    height: 501px;
+	}
 }
 
 @media(max-width: 991px){
@@ -468,6 +498,7 @@ body.home .lam-about-us-tradition-sec{
 	.hm-about-us-des p {
 	    margin-bottom: 30px;
 	}
+
 }
 
 @media(max-width: 767px){
@@ -506,10 +537,61 @@ body.home .lam-about-us-tradition-sec{
 	.hmaud-title{
 		font-size: 55px;
 	}
+	body.home .lam-about-us-tradition-sec {
+	    padding-top: 100px;
+	}
+	.hmgid-title {
+	    font-size: 65px;
+	}
+	.hm-grd-item {
+	    margin: 0 -15px;
+	}
+	.hmgi-col {
+	    padding: 0 15px;
+	}
 }
 @media(max-width: 639px){
 	.hm-about-us-fea-img{
 		height: 300px;
+	}
+	.hm-grd-item{
+		display: block;
+	}
+	.hm-grd-item-fea-img{
+		margin-bottom: 40px;
+	}
+	.hm-grd-item-fea-img {
+	    height: 301px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.hm-grds-sec-top-line {
+	    height: 12px;
+	}
+	.hm-grds-sec-top-line{
+		top: -6px;
+	}
+	.hm-grds-section{
+		padding-top: 55px;
+	}
+	.hm-grds ul li {
+	    padding-bottom: 60px;
+	}
+	.hmgi-col{
+		width: 100%;
+		text-align: center;
+	}
+	.hm-grd-item .lm-btn{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hmgi-col.hm-grd-item-fea-img{
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hm-grds-section{
+		padding-bottom: 0;
 	}
 }
 
@@ -524,6 +606,10 @@ body.home .lam-about-us-tradition-sec{
 	.hm-about-us-fea-img-inr-logo {
 	    max-width: 380px;
 	}
+	body.home .lam-about-us-tradition-sec {
+	    padding-top: 85px;
+	}
+
 }
 
 @media(max-width: 479px){
@@ -533,11 +619,22 @@ body.home .lam-about-us-tradition-sec{
 	.hm-about-us-fea-img-inr-logo {
 	    max-width: 280px;
 	}
+	.hmaud-btn a {
+	    width: 156px;
+	}
+	.hmaud-btn {
+	    padding-left: 4px;
+	    padding-right: 4px;
+	}
+	.hmaud-btns{
+		margin-left: -4px;
+		margin-right: -4px;
+	}
 }
 
 @media(max-width: 359px){
 	.hmaud-btn a {
-	    width: 139px;
+	    width: 136px;
 	    height: 50px;
 	}
 	.hm-about-us-fea-img-inr-logo {
