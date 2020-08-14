@@ -4,6 +4,7 @@
 .olive-oil-name-inr{
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .olive-oil-name-fea-img{
 	max-width: 47%;
@@ -127,4 +128,59 @@
 }
 .map-side-add .cfls-logo{
 	margin-bottom: 32px;
+}
+
+
+
+/* responsive */
+@media(max-width: 1599px){
+	
+}
+@media(max-width: 1499px){
+	
+}
+@media(max-width: 1399px){
+	
+}
+@media(max-width: 1299px){
+	
+}
+@media(max-width: 1199px){
+	.olive-oil-name-sec{
+		padding: 120px 0;
+	}
+}
+@media(max-width: 991px){
+	.olive-oil-name-sec{
+		padding: 100px 0;
+	}
+	.olive-oil-name-fea-img{
+		padding-right: 0;
+		min-height: 420px;
+	}
+	.olive-oil-name-desc{
+		padding-left: 40px;
+	}
+}
+@media(max-width: 767px){
+	.olive-oil-name-fea-img{
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	.olive-oil-name-desc{
+		max-width: 100%;
+		padding: 0;
+	}
+}
+@media(max-width: 639px){
+	
+}
+@media(max-width: 575px){
+	
+}
+@media(max-width: 479px){
+	
+}
+@media(max-width: 359px){
+	
 }
