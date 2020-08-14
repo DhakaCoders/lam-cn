@@ -51,21 +51,21 @@
 	bottom: 0;
 	background-color: linear-gradient(360deg, rgba(46, 35, 35, 0) -36.24%, rgba(37, 27, 28, 0.27) -36.22%, #251B1C 97.67%);
 }
-.hm-grds .hm-grd-item{
+.lm-wn-gdrs .lm-wn-gdrs-item{
 	display: flex;
 	align-items: center;
 }
-.hm-grd-item-fea-img{
+.lm-wn-gdrs-item .hm-grd-item-fea-img{
 	order: 2;
 }
-.hm-grd-item-des{
+.lm-wn-gdrs-item .hm-grd-item-des{
 	order: 1;
 }
-.hm-grd-item-des .hmgid-title{
+.lm-wn-gdrs-item-desc .hmgid-title{
 	line-height: 1;
 	margin-bottom: 20px;
 }
-.hm-grd-item-des .hmgid-sub-title{
+.lm-wn-gdrs-item-desc .hmgid-sub-title{
 	line-height: 1;
 	margin-bottom: 5px;
 }
