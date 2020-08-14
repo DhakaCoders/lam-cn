@@ -12,3 +12,8 @@ Text Domain: clipfresh
 */
 
 @import url('assets/css/main.css');
+
+
+.main-banner-sec-inr{
+	overflow: hidden;
+}
