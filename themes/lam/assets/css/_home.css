@@ -367,6 +367,8 @@
 }
 .lm-testi-angle-sec-des-cntlr blockquote i{
 	margin-bottom: 35px;
+	display: inline-block;
+	vertical-align: baseline;
 }
 .lm-testi-angle-sec-des-cntlr blockquote p{
 	font-size: 30px;
@@ -415,7 +417,9 @@ body.home .lam-about-us-tradition-sec{
 
 
 @media(max-width: 1499px){
-
+	.lm-testi-angle-sec-logo{
+		max-width: 1000px;
+	}
 }
 
 @media(max-width: 1399px){
@@ -425,11 +429,41 @@ body.home .lam-about-us-tradition-sec{
 	.hm-grds-sec-top-line{
 		height: 25px;
 	}
+	.lm-testi-angle-sec-logo{
+		max-width: 900px;
+		bottom: -55px;
+	}
+	.lm-testi-angle-sec-des-cntlr blockquote p {
+	    font-size: 25px;
+	    line-height: 40px;
+	    margin-bottom: 45px;
+	}
+	.esti-angle-sec-des-{
+		width: 65%;
+	}
+	.lm-testi-angle-sec-rgt-img{
+		width: 35%;
+	}
+	.lm-testi-angle-sec-des-cntlr{
+		padding-right: 215px;
+	}
+	.lm-testi-angle-sec-des-cntlr blockquote i{
+		margin-bottom: 0;
+	}
+	.lm-testi-angle-sec-des-cntlr blockquote i svg{
+		max-width: 130px;
+	}
 }
 
 @media(max-width: 1299px){
 	.hm-grds-section {
 	    padding: 150px 0 100px;
+	}
+	.lm-testi-angle-sec-logo{
+		max-width: 800px;
+	}
+	.lm-testi-angle-sec-des-cntlr {
+	    padding-right: 259px;
 	}
 }
 
@@ -461,6 +495,14 @@ body.home .lam-about-us-tradition-sec{
 	.hm-grd-item-fea-img {
 	    height: 501px;
 	}
+	.lm-testi-angle-sec-des-cntlr blockquote{
+		left: 15px!important;
+	}
+	.lm-testi-angle-sec-logo {
+	    max-width: 720px;
+	    bottom: -43px;
+	}
+
 }
 
 @media(max-width: 991px){
@@ -548,6 +590,9 @@ body.home .lam-about-us-tradition-sec{
 	}
 	.hmgi-col {
 	    padding: 0 15px;
+	}
+	.lm-testi-angle-sec-des-cntlr blockquote{
+		left: 20px!important;
 	}
 }
 @media(max-width: 639px){
