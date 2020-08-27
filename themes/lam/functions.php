@@ -23,7 +23,9 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
-        add_image_size( 'bloggrid', 350, 230, true );
+        add_image_size( 'aboutgrid', 636, 716, true );
+        add_image_size( 'quotegrid', 508, 720, true );
+        add_image_size( 'gallery', 298, 424, true );
         
 
 		
@@ -40,7 +42,9 @@ if( !function_exists('cbv_theme_setup') ){
 		) );
 
 		register_nav_menus( array(
-            'cbv_main_menu' => __( 'Main Menu', THEME_NAME )
+            'cbv_main_menu' => __( 'Main Menu', THEME_NAME ),
+            'cbv_ft_menu' => __( 'Footer Menu', THEME_NAME ),
+            'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME )
 		) );
 
 	}

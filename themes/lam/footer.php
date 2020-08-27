@@ -1,16 +1,19 @@
+<?php $copyright_text = get_field('copyright_text', 'options'); ?>
 <footer class="footer-wrp">
   <div class="ftr-top-nav">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="ftr-nav-inr">
-            <ul class="clearfix reset-list">
-              <li class="current-menu-item"><a href="#">Home</a></li>
-              <li><a href="#">The Family</a></li>
-              <li><a href="#">Wines</a></li>
-              <li><a href="#">Olive Oil</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+            <?php 
+              $fmenuOptions = array( 
+                  'theme_location' => 'cbv_ft_menu', 
+                  'menu_class' => 'clearfix reset-list',
+                  'container' => '',
+                  'container_class' => ''
+                );
+              wp_nav_menu( $fmenuOptions ); 
+            ?>
           </div>
         </div>
       </div>
@@ -22,14 +25,18 @@
         <div class="col-md-12">
           <div class="ftr-btm-inr">
             <div class="ftr-copyright">
-              <p>© 2020 La Macinaia. All Rights Reserved.</p>
+              <?php if( !empty( $copyright_text ) ) printf( '%s', $copyright_text); ?>
             </div>
             <div class="ftr-pg-link">
-              <ul class="reset-list">
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Sitemap</a></li>
-              </ul>
+            <?php 
+              $cmenuOptions = array( 
+                  'theme_location' => 'cbv_copyright_menu', 
+                  'menu_class' => 'reset-list',
+                  'container' => '',
+                  'container_class' => ''
+                );
+              wp_nav_menu( $cmenuOptions ); 
+            ?> 
             </div>
             <div class="ftr-designby">
               <a href="#">webdesign by conversal</a>

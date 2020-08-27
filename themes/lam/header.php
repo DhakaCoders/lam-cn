@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
 <head>
-  <meta charset="utf-8">
+<meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -15,11 +15,6 @@
 
 
    <svg style="display: none;">
-
-
-
-
-
 
     <!-- End of Noyon-->
 
@@ -68,7 +63,15 @@
    </svg>
 <?php wp_head(); ?>
 </head>
-<body class="home">
+<body <?php body_class(); ?>>
+<?php 
+$logoObj = get_field('hdlogo', 'options');
+if( is_array($logoObj) ){
+  $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+}else{
+  $logo_tag = '';
+}
+?>
 <header class="header">
   <div class="container">
       <div class="row">
@@ -76,27 +79,22 @@
           <div class="header-inr clearfix">
             <div class="hdr-lft">
               <div class="logo">
-                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-Logo.png"></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
+                </a>
               </div>
             </div>
             <div class="hdr-rgt clearfix">
               <nav class="main-nav">
-                <ul class="clearfix reset-list">
-                  <li class="current-menu-item"><a href="#">Home</a></li>
-                  <li><a href="#">The Family</a></li>
-                  <li class="menu-item-has-children"><a href="#">Wines</a>
-                    <ul class="sub-menu">
-                      <li class="current-menu-item"><a href="#">Acabados</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Olive Oil</a></li>
-                  <li><a href="#">Contact & Point of sales</a></li>
-                </ul>
+              <?php 
+                $menuOptions = array( 
+                    'theme_location' => 'cbv_main_menu', 
+                    'menu_class' => 'clearfix reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $menuOptions ); 
+              ?>
               </nav>
               <div class="hdr-social">
                 <ul class="reset-list clearfix">
