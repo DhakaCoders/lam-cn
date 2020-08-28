@@ -23,100 +23,114 @@
     </div>
   </div>
 </section>
-
+<?php 
+  $intro = get_field('introsec', $thisID);  
+  if( $intro ):
+?>
 <section class="olive-oil-name-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="olive-oil-name-inr">
-          <div class="olive-oil-name-fea-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/olive-oil-name-fea-img.jpg');">
+          <?php if( !empty($intro['afbeelding']) ): ?>
+          <div class="olive-oil-name-fea-img inline-bg" style="background-image: url('<?php echo cbv_get_image_src($intro['afbeelding'], 'oliveintrogird'); ?>');">
           </div>
+          <?php endif; ?>
           <div class="olive-oil-name-desc">
             <h6 class="olive-oil-name-sub-title">
-              <span class="olive-oil-name-sub-title-up">LA MACINAIA</span><br>
-            diSan Vincenti
+            <?php if( !empty($intro['merknaam']) ) printf('<span class="olive-oil-name-sub-title-up">%s</span>', $intro['merknaam']); ?>
+            <?php if( !empty($intro['label_naam']) ) printf('<br>%s', $intro['label_naam']); ?>
             </h6>
-            <h2 class="olive-oil-name-title">Olive Oil Name</h2>
-            <p>Donec consequat vestibulum metus. Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit, sollicitudin scelerisque purus leo id lectus. Quisque velit neque, euismod vitae magna sed, maximus cursus dui.</p>
+            <?php 
+              if( !empty($intro['titel']) ) printf('<h2 class="olive-oil-name-title">%s</h2>', $intro['titel']);
+              if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
+            ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+<?php endif; ?>
+<?php 
+  $showhideusps = get_field('showhideusps', $thisID);
+  $flusps = get_field('flusps', $thisID);  
+  if( $showhideusps ):
+  if( $flusps ):
+?>
 <section class="olive-oil-grid-items">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="olive-oil-grid-items-inr">
           <ul class="reset-list">
+            <?php foreach( $flusps as $flusp ): ?>
             <li>
               <div class="olive-oil-grid-item">
                 <div class="olive-oil-grid-item-img mHc">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/olive-oil-grid-item-img.svg" alt="">
+                  <?php
+                    $iconobj = $flusp['icon']; 
+                    if( is_array($iconobj) ){
+                      echo '<img src="'.$iconobj['url'].'" alt="'.$iconobj['alt'].'" title="'.$iconobj['title'].'">';
+                    }
+                  ?>
                 </div>
-                <h4 class="olive-oil-grid-item-title mHc1">Lorem Ipsum</h4>
-                <p>Fusce ac nibh quis sem sollicitudin efficitur. Donec efficitur pulvinar dolor.</p>
+                <?php 
+                  if( !empty($flusp['titel']) ) printf('<h4 class="olive-oil-grid-item-title mHc1">%s</h4>', $flusp['titel']);
+                  if( !empty($flusp['beschrijving']) ) echo wpautop( $flusp['beschrijving'] );
+                ?>
               </div>
             </li>
-            <li>
-              <div class="olive-oil-grid-item">
-                <div class="olive-oil-grid-item-img mHc">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/olive-oil-grid-item-img.svg" alt="">
-                </div>
-                <h4 class="olive-oil-grid-item-title mHc1">Lorem Ipsum</h4>
-                <p>Fusce ac nibh quis sem sollicitudin efficitur. Donec efficitur pulvinar dolor.</p>
-              </div>
-            </li>
-            <li>
-              <div class="olive-oil-grid-item">
-                <div class="olive-oil-grid-item-img mHc">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/olive-oil-grid-item-img.svg" alt="">
-                </div>
-                <h4 class="olive-oil-grid-item-title mHc1">Lorem Ipsum</h4>
-                <p>Fusce ac nibh quis sem sollicitudin efficitur. Donec efficitur pulvinar dolor.</p>
-              </div>
-            </li>
-            <li>
-              <div class="olive-oil-grid-item">
-                <div class="olive-oil-grid-item-img mHc">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/olive-oil-grid-item-img.svg" alt="">
-                </div>
-                <h4 class="olive-oil-grid-item-title mHc1">Lorem Ipsum</h4>
-                <p>Fusce ac nibh quis sem sollicitudin efficitur. Donec efficitur pulvinar dolor.</p>
-              </div>
-            </li>
+            <?php endforeach; ?>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
+<?php 
+  $showhideintro2 = get_field('showhideintro_2', $thisID);
+  $intro2 = get_field('introsec2', $thisID);  
+  if( $showhideintro2 ):
+  if( $intro2 ):
+?>
 <section class="olive-lam-desc">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="olive-lam-desc-inr">
           <div class="olive-lam-desc-fea-img">
-            <img src="<?php echo THEME_URI; ?>/assets/images/olive-lam-desc-fea-img.png" alt="">
+            <?php 
+            if( !empty($intro2['afbeelding']) ): 
+              echo cbv_get_image_tag($intro2['afbeelding']);
+            endif;
+            ?>
           </div>
           <div class="olive-lam-inr-desc">
-            <h3 class="olive-lam-inr-desc-title">Passion for Flavours</h3>
-            <p>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare, turpis odio suscipit enim, ut posuere sapien metus vel nunc.</p>
-            <ul>
-              <li>Praesent ultrices, turpis quis ultricies lacinia, sem sapien volutpat velit.</li>
-              <li> Vivamus congue felis rutrum, fringilla mauris.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
+          <?php 
+            if( !empty($intro2['titel']) ) printf('<h3 class="olive-lam-inr-desc-title">%s</h3>', $intro2['titel']);
+            if( !empty($intro2['beschrijving']) ) echo wpautop( $intro2['beschrijving'] );
+          ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
+<?php 
+  $showhidegetuigenis = get_field('showhidegetuigenis', $thisID);
+  $getuigenis = get_field('getuigenis', $thisID);  
+  if( $showhidegetuigenis ):
+
+  if( $getuigenis ):
+    
+?>
 <section class="lm-testi-angle-section clearfix">
     <div class="lm-testi-angle-sec-bg-1-xs show-md">
       <img src="<?php echo THEME_URI; ?>/assets/images/lm-testi-angle-sec-bg-1.png">
@@ -128,8 +142,13 @@
           <use xlink:href="#quote-xlg-icon-svg"></use>
         </svg> 
       </i>
-      <p>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare, turpis odio suscipit enim, ut posuere sapien.</p>
-      <strong>- Steven Rym, Customer</strong>
+      <?php if( !empty($getuigenis['beschrijving']) ) echo wpautop( $getuigenis['beschrijving'] ); ?>
+      <strong>
+      <?php 
+        if( !empty($getuigenis['naam']) ) printf('- %s ,', $getuigenis['naam']);
+        if( !empty($getuigenis['positie']) ) printf(' %s</h3>', $getuigenis['positie']);
+      ?>
+      </strong>
     </blockquote>
    </div>
    <div class="lm-testi-angle-sec-rgt-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/lm-testi-angle-sec-bg-2.png);">
@@ -140,6 +159,8 @@
    </div>
 
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
 <section class="google-map">
   <div class="google-map-cntlr">

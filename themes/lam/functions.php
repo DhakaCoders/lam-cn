@@ -26,6 +26,10 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'aboutgrid', 636, 716, true );
         add_image_size( 'quotegrid', 508, 720, true );
         add_image_size( 'gallery', 298, 424, true );
+        add_image_size( 'winesintrogrid', 586, 600, true );
+        add_image_size( 'oliveintrogird', 596, 466, true );
+        add_image_size( 'hmgrid1', 620, 448, true );
+        add_image_size( 'hmgrid2', 560, 448, true );
         
 
 		

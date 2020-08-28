@@ -4,37 +4,59 @@
   <div class="main-banner-sec-inr">
     <div class="container">
       <div class="row">
+        <?php 
+          $collft = get_field('collft', HOMEID);  
+          $colrgt = get_field('colrgt', HOMEID);  
+        ?>
         <div class="col-md-6 order-2">
           <div class="hm-bnr-fea-img-cntlr">
 
             <span class="hm-bnr-graphics-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-bnr-graphics-img.png);">
             </span>
+            <?php if( $colrgt ): ?>
             <span class="hm-bnr-btl">
-              <img src="<?php echo THEME_URI; ?>/assets/images/hm-bnr-btl-1.png">
+              <?php 
+                if( !empty($colrgt['afbeelding']) ): 
+                  echo cbv_get_image_tag($colrgt['afbeelding']);
+                endif;
+              ?>
             </span>
             <div class="hm-bnr-circle-cntlr">
               <span class="cirle-xs-size"></span>
               <span class="cirle-xs-size-2"></span>
               <span class="cirle-md-size"></span>
               <div class="hm-bnr-circle-cntlr-inr">
-                <h4 class="hmbcc-sub-title"><span>LA MACINAIA</span><br>
-                    diSan Vincenti</h4>
-                <h2 class="hmbcc-title">Chianti Classico</h2>
+              <?php if( !empty($colrgt['merknaam']) ) printf('<span>%s</span>', $colrgt['merknaam']); ?>
+              <?php if( !empty($colrgt['label_naam']) ) printf('<br>%s', $colrgt['label_naam']); ?>
+              </h4>
+              <?php if( !empty($colrgt['titel']) ) printf('<h2 class="hmbcc-title">%s</h2>', $colrgt['titel']); ?>
               </div>
             </div>
+            <?php endif; ?>
           </div>
         </div>
         <div class="col-md-6 order-1">
+          <?php if( $collft ): ?>
           <div class="main-bnr-sec-des">
             <div class="main-bnr-logo-xlg">
-              <img src="<?php echo THEME_URI; ?>/assets/images/logo-xlg.svg">
+            <?php 
+              if( !empty($collft['logo']) ): 
+                echo cbv_get_image_tag($collft['logo']);
+              endif;
+            ?>
             </div>
             <div class="main-bnr-sub-title">
-              <strong>FAMILY<span>-</span>TRADITION<span>-</span>PASSION </strong>
+              <?php if( !empty($collft['titel']) ) printf('<strong>%s</strong>', $collft['titel']); ?>
             </div>
-            <p>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare, turpis odio suscipit enim, ut posuere sapien metus vel nunc. </p>
-            <a href="#">The Family</a>
+            <?php if( !empty($collft['beschrijving']) ) echo wpautop( $collft['beschrijving'] ); ?>
+            <?php
+              $knop1 = $collft['knop'];
+              if( is_array( $knop1 ) &&  !empty( $knop1['url'] ) ){
+                  printf('<a href="%s" target="%s">%s</a>', $knop1['url'], $knop1['target'], $knop1['title']); 
+              } 
+            ?>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
@@ -46,6 +68,10 @@
 <div class="two-sec-cntrl">
   <span class="lines" style="background: url(<?php echo THEME_URI; ?>/assets/images/lines.svg);"></span>
   <div class="two-sec-cntrl-inr">
+    <?php
+      $showhidblock1 = get_field('showhidblock1', $thisID); 
+      if($showhidblock1):
+    ?>
     <section class="hm-about-us-section">
       <span class="hm-about-us-top-angle">
         <svg class="svg-cntlr" preserveAspectRatio="none" width="1920" height="502" viewBox="0 0 1920 502" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,29 +85,47 @@
       </div>
 
       <div class="hm-about-us-bg-1 inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-about-us-bg-1.png);"></div>
+      <?php
+        $block1 = get_field('block1', $thisID);
+        if($block1):
+      ?>
       <div class="container">
           <div class="row">
             <div class="col-md-6">
               <div class="hm-about-us-fea-img hm-about-us-fea-img-1 cmn-z-index hide-sm">
-                <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-about-us-fea-img-1.jpg);"></div>
+                <?php if( !empty($block1['afbeelding_1']) ): ?>
+                <div class="inline-bg" style="background: url('<?php echo cbv_get_image_src($block1['afbeelding_1'], 'hmgrid1'); ?>');"></div>
+                <?php endif; ?>
               </div>
             </div>
             <div class="col-md-6">
               <div class="hm-about-us-des cmn-z-index" id="sec-welcome">
-                <h2 class="hmaud-title">The Family</h2>
-                <p><strong>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare, turpis odio suscipit enim, ut posuere sapien metus vel nunc.</strong></p> 
-
-                <p>Nulla facilisi. Sed interdum maximus risus, molestie pulvinar enim volutpat vitae. Nullam a magna vitae nulla efficitur hendrerit. Maecenas sit amet elementum elit. Nunc aliquet risus interdum enim viverra tempor. Nulla in augue eleifend, egestas velit a, faucibus ex.</p>
+                <?php 
+                  if( !empty($block1['titel']) ) printf('<h2 class="hmaud-title">%s</h2>', $block1['titel']);
+                  if( !empty($block1['beschrijving']) ) echo wpautop( $block1['beschrijving'] );
+                ?>
                 <div class="hmaud-btns">
-                  <span class="hmaud-btn hmaud-btn-1"><a href="#">Wines</a></span>
-                  <span class="hmaud-btn hmaud-btn-2"><a href="#">Olive Oil</a></span>
+                    <?php 
+                      $knop1 = $block1['knop_1'];
+                      $knop2 = $block1['knop_2'];
+                      if( is_array( $knop1 ) &&  !empty( $knop1['url'] ) ){
+                          printf('<span class="hmaud-btn hmaud-btn-1"><a href="%s" target="%s">%s</a></span>', $knop1['url'], $knop1['target'], $knop1['title']); 
+                      } 
+                      if( is_array( $knop2 ) &&  !empty( $knop2['url'] ) ){
+                          printf('<span class="hmaud-btn hmaud-btn-2"><a href="%s" target="%s">%s</a></span>', $knop2['url'], $knop2['target'], $knop2['title']); 
+                      } 
+                    ?>
                 </div>
 
                 <div class="hm-about-us-fea-img hm-about-us-fea-img-1 cmn-z-index show-sm">
-                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-about-us-fea-img-1.jpg);"></div>
+                <?php if( !empty($block1['afbeelding_1']) ): ?>
+                  <div class="inline-bg" style="background: url('<?php echo cbv_get_image_src($block1['afbeelding_1'], 'hmgrid1'); ?>');"></div>
+                <?php endif; ?>
                 </div>
                 <div class="hm-about-us-fea-img hm-about-us-fea-img-2">
-                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-about-us-fea-img-2.jpg);"></div>
+                <?php if( !empty($block1['afbeelding_2']) ): ?>
+                  <div class="inline-bg" style="background: url('<?php echo cbv_get_image_src($block1['afbeelding_2'], 'hmgrid2'); ?>');"></div>
+                <?php endif; ?>
                   <span class="hm-about-us-fea-img-inr-logo">
                     <img src="<?php echo THEME_URI; ?>/assets/images/logo-xlg.svg">
                   </span>
@@ -89,28 +133,44 @@
               </div>
             </div>
           </div>
-      </div>    
+      </div>  
+      <?php endif; ?>  
     </section>
-    <section class="lam-about-us-tradition-sec inline-bg " style="background: url('<?php echo THEME_URI; ?>/assets/images/lam-about-us-tradition-sec-bg.png');">
+    <?php endif; ?>
+
+    <?php
+      $showhideblock2 = get_field('showhideblock2', HOMEID); 
+      if($showhideblock2):
+      $block2 = get_field('block2', HOMEID);
+      if($block2):
+        $block2_src = '';
+        if( !empty($block2['achtergrond_afbeelding']) ) $block2_src = cbv_get_image_src($block2['achtergrond_afbeelding']);
+    ?>
+    <section class="lam-about-us-tradition-sec inline-bg " style="background: url('<?php echo $block2_src; ?>');">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="lam-about-us-tradition-sec-inr">
               <div class="lab-about-us-trdt-ambition cmn-z-index">
-                <h3 class="lab-about-us-trdt-ambition-title">Ambition</h3>
-                <p>Sed auctor commodo lorem, vitae efficitur elit tincidunt eu. Integer quis ante rutrum, malesuada dolor et, <br> egestas est. Fusce at iaculis sapien. Proin enim lacus, eleifend sit amet pellentesque ac, molestie nec tortor. <br> Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <?php 
+                  if( !empty($block2['titel']) ) printf('<h3 class="lab-about-us-trdt-ambition-title">%s</h3>', $block2['titel']);
+                  if( !empty($block2['beschrijving']) ) echo wpautop( $block2['beschrijving'] );
+                ?> 
               </div>
               <div class="lab-about-us-trdt-wines cmn-z-index">
-                <span>4</span>
-                <h6 class="lab-about-us-trdt-wines-title">types of wines</h6>
-                <p>Fusce ac nibh quis sem sollicitudin efficitur. Donec <br> efficitur pulvinar dolor.</p>
+              <?php 
+                if( !empty($block2['aantal']) ) printf('<span>%s</span>', $block2['aantal']);
+                if( !empty($block2['subtitel']) ) printf('<h6 class="lab-about-us-trdt-wines-title">%s</h6>', $block2['subtitel']);
+                if( !empty($block2['korte_beschrijving']) ) echo wpautop( $block2['korte_beschrijving'] );
+              ?>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <?php endif; ?>
+    <?php endif; ?>
   </div>
 </div>
 
