@@ -1,6 +1,4 @@
 <?php 
-  get_header(); 
-
   $thisID = get_the_ID();
 
   $pageTitle = get_the_title($thisID);
@@ -27,7 +25,3 @@
     </div>
   </div>
 </section>
-
-
-<?php get_template_part('templates/google', 'map'); ?>
-<?php get_footer(); ?>

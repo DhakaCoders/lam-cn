@@ -115,9 +115,13 @@
 	width: 50%;
 	padding: 0 14px;
 	padding-bottom: 25px;
+	clear: inherit!important;
 
 }
-
+div.wpforms-container-full .wpforms-form .wpforms-error {
+    margin-top: 10px !important;
+    font-size: 14px !important;
+}
 .contact-form-sec .wpforms-form .wpforms-field-container .subjectField,
 .contact-form-sec .wpforms-form .wpforms-field-container .wpforms-field-textarea{
 	width: 100%;
@@ -179,8 +183,8 @@
 	max-width: 200px;
 	width: 100%;
 	height: 56px;
-	background: #DC6A2E;
-	font-size: 16px;
+	background: #DC6A2E !important;
+	font-size: 16px !important;
 	line-height: 18px;
 	color: #F3EFEB!important;
 	font-family: 'Merriweather', serif;
@@ -189,13 +193,13 @@
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	cursor: pointer;
-	padding: 20px 10px;
+	padding: 20px 10px !important;
 	border-radius: 30px;
 	margin-top: 5px;
-	border: 2px solid #DC6A2E;
+	border: 2px solid #DC6A2E !important;
 }
 .contact-form-sec .wpforms-form .wpforms-submit-container button:hover{
-	background: transparent;
+	background: transparent !important;
 	color: #DC6A2E!important;
 }
 

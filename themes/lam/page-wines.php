@@ -6,16 +6,23 @@
 
   $thisID = get_the_ID();
 
+  $pageTitle = get_the_title($thisID);
+  $custom_page_title = get_field('aangepaste_paginatitel', $thisID);
+  if(!empty(str_replace(' ', '', $custom_page_title))){
+    $pageTitle = $custom_page_title;
+  } 
+  $standaardbanner = get_field('bannerafbeelding', $thisID);
+  if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/contact-bnr-page.jpg';
 ?>
 <section class="page-banner">
   <div class="page-banner-controller" style="overflow: hidden;">
-    <div class="page-banner-bg inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/wines-pg-bnr.png');"></div>
+    <div class="page-banner-bg inline-bg" style="background: url('<?php echo $standaardbanner; ?>');"></div>
     <div class="page-banner-des">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="page-banner-des-inner">
-              <h1 class="page-banner-title">Wines</h1>
+              <h1 class="page-banner-title"> <?php echo $pageTitle; ?></h1>
             </div>
           </div>
         </div>
@@ -23,6 +30,7 @@
     </div>
   </div>
 </section>
+
 <?php 
   $showhideblock = get_field('showhideblock', $thisID);
   $blocks = get_field('blocks', $thisID);  
@@ -195,46 +203,5 @@
 </section>
 <?php endif; ?>
 <?php endif; ?>
-
-<section class="google-map">
-  <div class="google-map-cntlr">
-    <span class="google-map-bg"></span>
-    <div id="mapID" class="" data-latitude="23.7749" data-longitude="90.3657" style="width:100%; height:653px"></div>
-    <div class="map-side-add">
-      <div class="cfls-logo">
-        <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hdr-Logo.png"></a>
-      </div>
-      <div class="cfls-adress">
-              <a href="#">
-                <i>
-                  <svg class="lam-map-marker-svg" width="13" height="17" viewBox="0 0 13 17" fill="#fff">
-                    <use xlink:href="#lam-map-marker-svg"></use>
-                  </svg> 
-                </i>
-                Address Line 1, <br> Italy
-              </a>
-            </div>
-            <div class="cfls-email">
-              <a href="#">
-                <i>
-                  <svg class="lam-envelope-svg" width="15" height="15" viewBox="0 0 15 15" fill="#fff">
-                    <use xlink:href="#lam-envelope-svg"></use>
-                  </svg> 
-                </i>
-                info@lamaciania.it
-              </a>
-            </div>
-            <div class="cfls-phone">
-              <a href="#">
-                <i>
-                  <svg class="lam-phone-svg" width="13" height="13" viewBox="0 0 13 13" fill="#fff">
-                    <use xlink:href="#lam-phone-svg"></use>
-                  </svg> 
-                </i>
-                +39 000 888 5555
-              </a>
-            </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('templates/google', 'map'); ?>
 <?php get_footer(); ?>

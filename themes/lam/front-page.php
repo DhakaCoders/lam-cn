@@ -174,7 +174,6 @@
   </div>
 </div>
 
-
 <section class="hm-grds-section">
   <span class="hm-grds-sec-top-circle"><img src="<?php echo THEME_URI; ?>/assets/images/hm-grds-sec-top-circle.svg"></span>
   <span class="hm-grds-sec-top-line"></span>
@@ -183,33 +182,64 @@
         <div class="col-md-12">
           <div class="hm-grds">
             <ul class="reset-list">
+            <?php
+              $showhideblock3 = get_field('showhideblock3', HOMEID); 
+              if($showhideblock3):
+              $block3 = get_field('block3', HOMEID);
+              if($block3):
+            ?>
               <li class="clearfix">
                 <div class="hm-grd-item clearfix">
                   <div class="hmgi-col hm-grd-item-fea-img">
-                    <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-grd-item-fea-img-1.jpg);"></div>
+                  <?php if( !empty($block3['afbeelding']) ): ?>
+                  <div class="inline-bg" style="background: url('<?php echo cbv_get_image_src($block3['afbeelding'], 'winesintrogrid'); ?>');"></div>
+                  <?php endif; ?>
                   </div>
                   <div class="hmgi-col hm-grd-item-des">
-                    <h6 class="hmgid-sub-title">Passion for taste</h6>
-                    <h2 class="hmgid-title">Wines</h2>
-                    <p>Nullam a magna vitae nulla efficitur hendrerit. Maecenas sit amet elementum elit. Nunc aliquet risus interdum enim viverra tempor. Nulla in augue eleifend, egestas velit a, faucibus ex.</p>
-                    <a class="lm-btn" href="#">Wines</a>
-                  </div>
-                </div>
-              </li>
-              <li class="clearfix">
-                <div class="hm-grd-item clearfix">
-                  <div class="hmgi-col hm-grd-item-fea-img">
-                    <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-grd-item-fea-img-2.jpg);"></div>
-                  </div>
-                  <div class="hmgi-col hm-grd-item-des">
-                    <h6 class="hmgid-sub-title">Passion for flavours</h6>
-                    <h2 class="hmgid-title">Olive Oil </h2>
-                    <p>Nullam a magna vitae nulla efficitur hendrerit. Maecenas sit amet elementum elit. Nunc aliquet risus interdum enim viverra tempor. Nulla in augue eleifend, egestas velit a, faucibus ex.</p>
-                    <a class="lm-btn" href="#">Olive Oil</a>
-                  </div>
-                </div>
-              </li>
+                    <?php 
+                      if( !empty($block3['subtitel']) ) printf('<h6 class="hmgid-sub-title">%s</h6>', $block3['subtitel']);
+                      if( !empty($block3['titel']) ) printf('<h2 class="hmgid-title">%s</h2>', $block3['titel']);
+                      if( !empty($block3['beschrijving']) ) echo wpautop( $block3['beschrijving'] );
 
+                      $knop3 = $block3['knop'];
+                      if( is_array( $knop3 ) &&  !empty( $knop3['url'] ) ){
+                          printf('<a class="lm-btn" href="%s" target="%s">%s</a>', $knop3['url'], $knop3['target'], $knop3['title']); 
+                      } 
+                    ?>
+                  </div>
+                </div>
+              </li>
+              <?php endif; ?>
+              <?php endif; ?>
+              <?php
+                $showhideblock4 = get_field('showhideblock4', HOMEID); 
+                if($showhideblock4):
+                $block4 = get_field('block4', HOMEID);
+                if($block4):
+              ?>
+              <li class="clearfix">
+                <div class="hm-grd-item clearfix">
+                  <div class="hmgi-col hm-grd-item-fea-img">
+                  <?php if( !empty($block4['afbeelding']) ): ?>
+                  <div class="inline-bg" style="background: url('<?php echo cbv_get_image_src($block4['afbeelding'], 'winesintrogrid'); ?>');"></div>
+                  <?php endif; ?>
+                  </div>
+                  <div class="hmgi-col hm-grd-item-des">
+                    <?php 
+                      if( !empty($block4['subtitel']) ) printf('<h6 class="hmgid-sub-title">%s</h6>', $block4['subtitel']);
+                      if( !empty($block4['titel']) ) printf('<h2 class="hmgid-title">%s</h2>', $block4['titel']);
+                      if( !empty($block4['beschrijving']) ) echo wpautop( $block4['beschrijving'] );
+
+                      $knop4 = $block4['knop'];
+                      if( is_array( $knop4 ) &&  !empty( $knop4['url'] ) ){
+                          printf('<a class="lm-btn" href="%s" target="%s">%s</a>', $knop4['url'], $knop4['target'], $knop4['title']); 
+                      } 
+                    ?>
+                  </div>
+                </div>
+              </li>
+              <?php endif; ?>
+              <?php endif; ?>
             </ul>
           </div>
         </div>
@@ -217,7 +247,14 @@
   </div>    
 </section>
 
+<?php 
+  $showhidegetuigenis = get_field('showhidegetuigenis', HOMEID);
+  $getuigenis = get_field('getuigenis', HOMEID);  
+  if( $showhidegetuigenis ):
 
+  if( $getuigenis ):
+    
+?>
 <section class="lm-testi-angle-section clearfix">
     <div class="lm-testi-angle-sec-bg-1-xs show-md">
       <img src="<?php echo THEME_URI; ?>/assets/images/lm-testi-angle-sec-bg-1.png">
@@ -229,8 +266,13 @@
           <use xlink:href="#quote-xlg-icon-svg"></use>
         </svg> 
       </i>
-      <p>Fusce iaculis tellus ac congue fermentum. Donec dignissim, ante id cursus ornare, turpis odio suscipit enim, ut posuere sapien.</p>
-      <strong>- Steven Rym, Customer</strong>
+      <?php if( !empty($getuigenis['beschrijving']) ) echo wpautop( $getuigenis['beschrijving'] ); ?>
+      <strong>
+      <?php 
+        if( !empty($getuigenis['naam']) ) printf('- %s ,', $getuigenis['naam']);
+        if( !empty($getuigenis['positie']) ) printf(' %s</h3>', $getuigenis['positie']);
+      ?>
+      </strong>
     </blockquote>
    </div>
    <div class="lm-testi-angle-sec-rgt-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/lm-testi-angle-sec-bg-2.png);">
@@ -241,73 +283,7 @@
    </div>
 
 </section>
-
-
-<?php 
-  $logoObj = get_field('ftlogo', 'options');
-  if( is_array($logoObj) ){
-    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
-  }else{
-    $logo_tag = '';
-  }
-  $spacialArry = array(".", "/", "+", " ", "(", ")");$replaceArray = '';
-  $gmapsurl = get_field('map_url', 'options');
-  $adres = get_field('address', 'options');
-  $e_mailadres = get_field('emailaddress', 'options');
-  $show_telefoon = get_field('telephone', 'options');
-  $telefoon = trim(str_replace($spacialArry, $replaceArray, $show_telefoon));
-  $gmaplink = !empty($gmapsurl)?$gmapsurl: 'javascript:void()';
-?>
-
-
-
-<section class="google-map">
-  <div class="google-map-cntlr">
-    <span class="google-map-bg"></span>
-    <div id="mapID" class="" data-latitude="23.7749" data-longitude="90.3657" style="width:100%; height:653px"></div>
-    <div class="map-side-add">
-      <div class="cfls-logo">
-        <a href="<?php echo esc_url(home_url('/')); ?>">
-          <?php echo $logo_tag; ?>
-        </a>
-      </div>
-      <?php if( !empty( $adres ) ): ?>
-      <div class="cfls-adress">
-        <a href="<?php echo $gmaplink; ?>">
-          <i>
-            <svg class="lam-map-marker-svg" width="13" height="17" viewBox="0 0 13 17" fill="#fff">
-              <use xlink:href="#lam-map-marker-svg"></use>
-            </svg> 
-          </i>
-          <?php echo $adres; ?>
-        </a>
-      </div>
-      <?php endif; ?>
-      <?php if( !empty( $e_mailadres ) ): ?>
-      <div class="cfls-email">
-        <a href="mailto:<?php echo $e_mailadres; ?>">
-          <i>
-            <svg class="lam-envelope-svg" width="15" height="15" viewBox="0 0 15 15" fill="#fff">
-              <use xlink:href="#lam-envelope-svg"></use>
-            </svg> 
-          </i>
-          <?php echo $e_mailadres; ?>
-        </a>
-      </div>
-      <?php endif; ?>
-      <?php if( !empty( $telefoon ) ): ?>
-      <div class="cfls-phone">
-        <a href="tel:<?php echo $telefoon; ?>">
-          <i>
-            <svg class="lam-phone-svg" width="13" height="13" viewBox="0 0 13 13" fill="#fff">
-              <use xlink:href="#lam-phone-svg"></use>
-            </svg> 
-          </i>
-          <?php echo $show_telefoon; ?>
-        </a>
-      </div>
-      <?php endif; ?>
-    </div>
-  </div>
-</section>
+<?php endif; ?>
+<?php endif; ?>
+<?php get_template_part('templates/google', 'map'); ?>
 <?php get_footer(); ?>

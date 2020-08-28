@@ -71,6 +71,7 @@ if( is_array($logoObj) ){
 }else{
   $logo_tag = '';
 }
+$instagram = get_field('instagram_url', 'options');
 ?>
 <header class="header">
   <div class="container">
@@ -98,7 +99,9 @@ if( is_array($logoObj) ){
               </nav>
               <div class="hdr-social">
                 <ul class="reset-list clearfix">
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <?php if( !empty( $instagram ) ): ?>
+                  <li><a href="<?php echo $instagram; ?>"><i class="fab fa-instagram"></i></a></li>
+                <?php endif; ?>
                 </ul>
               </div>
               <div class="hdr-lan">

@@ -18,7 +18,6 @@ if( !function_exists('cbv_theme_setup') ){
 	  load_theme_textdomain( 'lam', get_template_directory() . '/languages' );
 		add_theme_support( 'title-tag' );
         add_theme_support( 'wc-product-gallery-lightbox' );
-        add_theme_support( 'woocommerce' );
 		add_theme_support('post-thumbnails');
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');

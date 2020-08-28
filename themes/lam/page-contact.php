@@ -9,16 +9,24 @@
   $cont = get_field('contacteer', $thisID); 
   $collft = $cont['col_left'];
   $colright = $cont['col_right'];
+
+  $pageTitle = get_the_title($thisID);
+  $custom_page_title = get_field('aangepaste_paginatitel', $thisID);
+  if(!empty(str_replace(' ', '', $custom_page_title))){
+    $pageTitle = $custom_page_title;
+  } 
+  $standaardbanner = get_field('bannerafbeelding', $thisID);
+  if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/contact-bnr-page.jpg';
 ?>
 <section class="page-banner">
   <div class="page-banner-controller" style="overflow: hidden;">
-    <div class="page-banner-bg inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/contact-bnr-page.jpg');"></div>
+    <div class="page-banner-bg inline-bg" style="background: url('<?php echo $standaardbanner; ?>');"></div>
     <div class="page-banner-des">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="page-banner-des-inner">
-              <h1 class="page-banner-title"> Contact & Point of sales</h1>
+              <h1 class="page-banner-title"> <?php echo $pageTitle; ?></h1>
             </div>
           </div>
         </div>
@@ -105,9 +113,7 @@
             ?>
             </div>
             <div class="lam-contact-form-inr">
-              <div class="wpforms-container">
-                <?php if(!empty($colright['form_shortcode'])) echo do_shortcode( $colright['form_shortcode'] ); ?>
-              </div>
+              <?php if(!empty($colright['form_shortcode'])) echo do_shortcode( $colright['form_shortcode'] ); ?>
             </div>
             <?php endif; ?>
           </div>
@@ -190,11 +196,15 @@
     </div>
   </div>
 </section>
-
+<?php 
+$flgmap = get_field('flgmap', 'options');
+?>
 <section class="google-map">
   <div class="google-map-cntlr">
     <span class="google-map-bg"></span>
-    <div id="mapID" class="" data-latitude="23.7749" data-longitude="90.3657" style="width:100%; height:653px"></div>
+    <?php if( $flgmap ): ?>
+    <div id="mapID" class="" data-latitude="<?php echo $flgmap['lat']; ?>" data-longitude="<?php echo $flgmap['lng']; ?>" style="width:100%; height:653px"></div>
+    <?php endif; ?>
     
   </div>
 </section>
