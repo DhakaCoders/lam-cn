@@ -8,7 +8,7 @@
 }
 
 .page-banner.innerpage-banner .page-banner-title{
-	font-size: 90px;
+	font-size: 70px;
 }
 
 .fl-dft-overflow-controller {
@@ -273,12 +273,10 @@ Gallery design
 .table-dsc{
 	padding: 0;
 	border-top: none;
-	border-bottom: 2px solid #F8F8F8;
 	background: #fff;
 	color: #000;
 }
 .table-dsc table tbody tr td:last-child{
-	border-right: 2px solid #F8F8F8;
 	padding-left: 0;
 	padding-right: 36px;
 }
@@ -457,6 +455,9 @@ Gallery design
 	.default-page-con{
 		padding-bottom: 70px;
 	}
+	.page-banner.innerpage-banner .page-banner-title{
+		font-size: 60px;
+	}
 }
 
 
@@ -526,12 +527,16 @@ Gallery design
 	.default-page-con{
 		padding-bottom: 40px;
 	}
-
+	.page-banner.innerpage-banner .page-banner-title{
+		font-size: 55px;
+	}
 }
 
 
 @media(max-width: 479px){
-	
+	.page-banner.innerpage-banner .page-banner-title{
+		font-size: 50px;
+	}
 	
 }
 
