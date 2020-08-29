@@ -69,7 +69,7 @@
   <span class="lines" style="background: url(<?php echo THEME_URI; ?>/assets/images/lines.svg);"></span>
   <div class="two-sec-cntrl-inr">
     <?php
-      $showhidblock1 = get_field('showhidblock1', $thisID); 
+      $showhidblock1 = get_field('showhidblock1', HOMEID); 
       if($showhidblock1):
     ?>
     <section class="hm-about-us-section">
@@ -86,7 +86,7 @@
 
       <div class="hm-about-us-bg-1 inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-about-us-bg-1.png);"></div>
       <?php
-        $block1 = get_field('block1', $thisID);
+        $block1 = get_field('block1', HOMEID);
         if($block1):
       ?>
       <div class="container">
