@@ -165,7 +165,9 @@
 	/* .default-page-con ul li, ul li{
 		padding: 5px 0 15px 20px!important;
 	} */
-
+	.page-banner.page-banner-404 .page-banner-title{
+		font-size: 60px;
+	}
 }
 
 @media(max-width: 479px){
