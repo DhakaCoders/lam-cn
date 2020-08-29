@@ -27,7 +27,8 @@
 	margin-bottom: 20px;
 	padding-top: 20px;
 }
-.default-page-con hr{
+.default-page-con hr,
+.dfhrule{
 	margin-top: 55px;
 	margin-bottom: 55px;
 	border-top: 2px solid #F4F4F4;
