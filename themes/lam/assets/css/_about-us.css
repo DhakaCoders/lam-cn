@@ -241,13 +241,13 @@
 .lam-about-us-generation-sec{
 	padding: 190px 0 165px 0;
 	position: relative;
-	margin-bottom: -165px;
+	margin-bottom: -175px;
 	overflow: hidden;
 }
 .circle-about-page{
 	position: absolute;
 	right: 0;
-	bottom: -165px;
+	bottom: -350px;
 	z-index: 12;
 
 }
@@ -260,8 +260,7 @@
 .lam-about-us-generation-fea-img-ctlr{
 	float: left;
 	width: 40%;
-	min-height: 720px;
-	height: 100%;
+	height: 720px;
 	border-radius: 20px;
 }
 .lam-about-us-generation-des{
@@ -270,8 +269,8 @@
 	padding-left: 90px;
 }
 .lam-about-us-generation-fea-img{
-	min-height: 720px;
-	height: 100%;
+	
+	height: 100%!important;
 	border-radius: 20px;
 }
 .lam-about-us-generation-des-title{
@@ -317,16 +316,33 @@
 	}
 }
 
+@media(min-width: 1600px){
+	.circle-about-page {
+	    bottom: -300px;
+	}
+}
+@media(max-width: 1599px){
+	.circle-about-page{
+		bottom: -282px;
+	}
+}
+
 
 @media(max-width: 1499px){
 	.page-banner-title{
 		font-size: 110px;
+	}
+	.circle-about-page {
+	    bottom: -265px;
 	}
 }
 
 @media(max-width: 1399px){
 	.page-banner-title{
 		font-size: 100px;
+	}
+	.circle-about-page {
+	    bottom: -240px;
 	}
 }
 
@@ -366,6 +382,15 @@
 	.lam-about-us-generation-des-title{
 		font-size: 45px;
 	}
+	.circle-about-page {
+	    bottom: -225px;
+	}
+	.lam-about-us-gallery-ctlr{
+		height: 323px;
+	}
+	.lam-about-us-gallery-btm-logo{
+		bottom: -45px;
+	}
 }
 	
 
@@ -402,7 +427,7 @@
 	    padding-bottom: 30px;
 	}
 	.lam-about-us-gallery-btm-logo{
-		bottom: -25px;
+		bottom: -5px;
 	}
 	.lam-about-us-tradition-sec {
 	    padding-top: 190px;
@@ -436,6 +461,9 @@
 	.lam-about-us-generation-des p {
 	    font-size: 25px;
 	    margin-bottom: 30px;
+	}
+	.circle-about-page {
+	    bottom: -185px;
 	}
 
 }
@@ -481,7 +509,7 @@
 	    padding-bottom: 30px;
 	}
 	.lam-about-us-gallery-btm-logo {
-	    bottom: -15px;
+	    bottom: 0px;
 	}
 	.lam-about-us-tradition-sec {
 	    padding-top: 160px;
@@ -512,10 +540,12 @@
 	}
 	.lam-about-us-generation-fea-img-ctlr {
 	    width: 100%;
+	    margin-bottom: 30px;
 	}
 	.lam-about-us-generation-des {
 	    padding-left: 0;
 	    width: 100%;
+	    padding-bottom: 20px;
 	}
 	.lam-about-us-generation-fea-img{
 		max-width: 500px;
@@ -535,10 +565,11 @@
 	    min-height: 500px;
 	}
 	.lam-about-us-generation-fea-img-ctlr {
-	    min-height: 520px;
+	    height: 520px;
 	}
-	.lam-about-us-generation-fea-img {
-	    min-height: 520px;
+	.lam-about-us-grd-sec-inr > ul > li:nth-child(2n+2) 
+	.lam-about-us-grd-item-fea-img-ctlr {
+	    padding-right: 0;
 	}
 	
 	
@@ -573,7 +604,7 @@
 	    margin: 0 auto;
 	}
 	.lam-about-us-gallery-btm-logo {
-	    bottom: 0px;
+	    bottom: 10px;
 	}
 	.lam-about-us-tradition-sec {
 	    padding-top: 140px;
@@ -610,6 +641,9 @@
 	.circle-about-page {
 	    bottom: -90px;
 	}
+	.lam-about-us-gallery-btm-logo {
+	    bottom: 15px;
+	}
 }
 
 @media(max-width: 479px){
@@ -617,16 +651,36 @@
 		padding-bottom: 20px;
 	}
 	.lam-about-us-generation-des-title {
-	    font-size: 22px;
+	    font-size: 25px;
 	}
 	.circle-about-page {
 	    bottom: -60px;
+	}
+	.lam-about-us-gallery-btm-logo {
+	    bottom: 18px;
+	}
+	.lab-about-us-trdt-wines p br{
+		display: none;
+	}
+	.lam-about-us-grd-item-fea-img {
+	    min-height: 350px;
+	}
+	.lam-about-us-generation-fea-img-ctlr{
+		height: 350px;
 	}
 
 }
 
 @media(max-width: 359px){
-
+	.lam-about-us-gallery-btm-logo {
+	    bottom: 20px;
+	}
+	.lam-about-us-grd-item-fea-img {
+	    min-height: 300px;
+	}
+	.lam-about-us-generation-fea-img-ctlr{
+		height: 300px;
+	}
 }
 
 

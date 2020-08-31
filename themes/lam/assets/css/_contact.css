@@ -379,6 +379,7 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	}
 	.contact-form {
 	    width: 100%;
+	    padding: 0 80px;
 	}
 	.cfls-logo {
 	    margin-bottom: 25px;
@@ -420,6 +421,14 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	.contact-table-sec-item .table tbody td:last-child {
 	    padding-right: 30px;
 	}
+	.contact-form-left-sidebar-inr{
+		max-width: 350px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.contact-form-entry-hdr{
+		text-align: center;
+	}
 	
 }
 
@@ -435,17 +444,25 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	    overflow-y: hidden;
 	    white-space: nowrap;
 	}
+	.contact-form {
+	    padding: 0 50px;
+	}
 }
 
 @media(max-width: 575px){
 	.contact-table-title {
 	    font-size: 20px;
 	}
+	.contact-form {
+	    padding: 0 30px;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.contact-form {
+	    padding: 0 0px;
+	}
 
 }
 
