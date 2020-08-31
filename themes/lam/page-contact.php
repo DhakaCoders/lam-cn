@@ -108,7 +108,7 @@
             <?php if( $colright ): ?>
             <div class="contact-form-entry-hdr">
             <?php 
-              if( !empty($colright['titel']) ) printf('<h4 class="contact-form-entry-hdr-title">%s</h4>', $colright['titel']);
+              if( !empty($colright['titel']) ) printf('<h2 class="contact-form-entry-hdr-title">%s</h2>', $colright['titel']);
               if( !empty($colright['beschrijving']) ) echo wpautop( $colright['beschrijving'] );
             ?>
             </div>
@@ -135,7 +135,7 @@
             $wmds = $wmd['wmd'];
           ?>
           <div class="contact-table-sec-item">
-            <?php if( !empty( $wmd['titel'] ) ) printf( '<h5 class="contact-table-title">%s</h5>', $wmd['titel']); ?>
+            <?php if( !empty( $wmd['titel'] ) ) printf( '<h3 class="contact-table-title">%s</h3>', $wmd['titel']); ?>
             <div class="lam-table-ctlr">
               <?php if( $wmds ): ?>
               <table class="table">
@@ -168,7 +168,7 @@
               $resturent = get_field('resturentsec', $thisID);
               $rests = $resturent['restaurant'];
             ?>
-            <?php if( !empty( $resturent['titel'] ) ) printf( '<h5 class="contact-table-title">%s</h5>', $resturent['titel']); ?>
+            <?php if( !empty( $resturent['titel'] ) ) printf( '<h3 class="contact-table-title">%s</h3>', $resturent['titel']); ?>
             <div class="lam-table-ctlr">
               <table class="table">
                 <thead>
