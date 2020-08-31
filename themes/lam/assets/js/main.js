@@ -186,6 +186,35 @@ google.maps.event.addDomListener(window, 'load', initialize);
   $(window).resize(function() {
     leftWidth();
   });*/
+  if (windowWidth <= 1199) {
+    $('.hdr-humberger').on('click', function(e){
+      $('.xs-main-nav-cntlr').addClass('opacity-1');
+      $('.bdoverlay').addClass('active');
+      $('body').addClass('active-scroll-off');
+      $(this).addClass('active-collapse');
+    });
+    $('.closebtn').on('click', function(e){
+      $('.bdoverlay').removeClass('active');
+      $('.xs-main-nav-cntlr').removeClass('opacity-1');
+      $('body').removeClass('active-scroll-off');
+      $('.line-icon').removeClass('active-collapse');
+    });
+    
+    $('li.menu-item-has-children > a').on('click', function(e){
+      e.preventDefault();
+    //$('li.menu-item-has-children .sub-menu').slideUp(300);
+    $(this).toggleClass('sub-menu-active');
+    $(this).toggleClass('sub-menu-plus');
+    //$(this).next().slideDown(300);
+    $(this).next().slideToggle(300);
+    $(this).css('color', '#B78454');
+
+  });
+  }
+
+
+
+
     /*End of Noyon*/
 
 
