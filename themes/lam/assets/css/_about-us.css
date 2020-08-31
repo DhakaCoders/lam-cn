@@ -163,9 +163,11 @@
 .lam-about-us-gallery-sec ul{
 	margin-left: -15px;
 	margin-right: -15px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .lam-about-us-gallery-sec ul li{
-	float: left;
 	width: 25%;
 	padding-left: 15px;
 	padding-right: 15px;
