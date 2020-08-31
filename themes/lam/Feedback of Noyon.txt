@@ -50,12 +50,22 @@ Desktop--->>
 	ai gap gulo mileni
 
 
-
-
 5. https://prnt.sc/tz20do
 	ata akta heading hobe, h5 or 6 use korte paro
 
 
+Responsive------->
+-------------------
+
+1. https://prnt.sc/u8w2yf
+	991px atar font-size komay ak line a rakho
+
+2. https://prnt.sc/u8w4jc
+	768px pojonto ai text ta ak line rakho , font-size komay
+
+
+3. https://prnt.sc/u8w57g
+	icon text ar sathe lege geche.
 
 
 Wines
@@ -87,5 +97,34 @@ Desktop--->>
 	gap besi mone hosche
 
 
+
+Responsive---->
+---------------------
+
+1. https://prnt.sc/u8v74r
+	position relative lagbe, just z-index ki kaj kore?
+
+2. https://prnt.sc/u8vag5
+	ai svg icon ta home page ar header a pest kora nai, tai payni. sob page ar jonno header aktai call kora hoy, tai onno j kono page a svg use korle ta sathe sathe home a diye rakhbo amra.
+
+
+3. https://prnt.sc/u8vi1v
+	i) 991px text ar font-size 19px rekhe, padding ata daw, mane 768 pojonto 4 ta item akline ai rakha jay dekhtechi.
+	ii) 767px a abar font-size baray dite hobe
+
+4. https://prnt.sc/u8vm18
+	991px a font-size komay ak line a rakho text ta
+
+5. https://prnt.sc/u8voxu
+	767px a border radius show korena
+
+6. https://prnt.sc/u8vxp3
+	font-size komay ak line a rakho, 575px a komate paro
+
+7. https://prnt.sc/u8vyb9
+	991px a lege jasche, text ar sathe
+
+8. https://prnt.sc/u8w0ir
+	479px a font size 37px daw 
 
 
