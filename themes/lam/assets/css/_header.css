@@ -398,22 +398,24 @@ nav.main-nav ul.sub-menu li:hover:after {
 	}
 	.menu-item-has-children > a{
 		position: relative;
-		padding-left: 25px;
+		padding-right: 25px;
 	}
 	.menu-item-has-children > a:after{
 		position: absolute;
-		content: "+";
+		content: "\f078";
+		 font-family: "FontAwesome";
 		top: 50%;
-		left: 0;
+		right: 0;
 		transform: translateY(-50%);
 		color: #fff;
 		margin-top: -9px;
 	}
 	.menu-item-has-children > a.sub-menu-plus:before{
 		position: absolute;
-		content: "-";
+		content: "\f077";
+		 font-family: "FontAwesome";
 		top: 50%;
-		left: 2px;
+		right: 0;
 		transform: translateY(-50%);
 		color: #B78454;
 		margin-top: -9px;
@@ -436,7 +438,7 @@ nav.main-nav ul.sub-menu li:hover:after {
 		border-bottom: none;
 	}
 	.nav-menu-bg > ul > li.menu-item-has-children > ul.sub-menu >li a{
-		font-size: 17px;
+		font-size: 15px;
 		color: #fff;
 		text-transform: uppercase;
 	}
