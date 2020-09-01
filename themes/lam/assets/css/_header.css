@@ -509,3 +509,21 @@ nav.main-nav ul.sub-menu li:hover:after {
 		width: 125px;
 	}
 }
+
+@media(max-width: 575px){
+	.xs-popup-hdr {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.nav-menu-bg > ul > li > a{
+		font-size: 18px;
+		padding-bottom: 13px;
+	}
+	.nav-menu-bg > ul > li.menu-item-has-children > ul.sub-menu >li{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.nav-menu-bg > ul > li.menu-item-has-children > ul.sub-menu >li a{
+		font-size: 14px;
+	}
+}
