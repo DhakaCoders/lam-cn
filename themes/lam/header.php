@@ -125,4 +125,46 @@ $instagram = get_field('instagram_url', 'options');
         </div>
       </div>
   </div>
+  <div class="xs-main-nav-cntlr show-lg">
+
+    <nav class="xs-main-nav">
+      <div class="xs-popup-hdr">
+        <div class="logo">
+          <a href="<?php echo esc_url(home_url('/')); ?>">
+            <?php echo $logo_tag; ?>
+          </a>
+        </div>
+        <div class="closebtn">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      
+      <div class="nav-menu-bg">
+        <?php 
+          $menuOptions = array( 
+              'theme_location' => 'cbv_main_menu', 
+              'menu_class' => 'clearfix reset-list',
+              'container' => '',
+              'container_class' => ''
+            );
+          wp_nav_menu( $menuOptions ); 
+        ?>
+        <div class="hdr-social">
+          <ul class="reset-list clearfix">
+            <?php if( !empty( $instagram ) ): ?>
+              <li><a href="<?php echo $instagram; ?>"><i class="fab fa-instagram"></i></a></li>
+            <?php endif; ?>
+          </ul>
+        </div>
+        <div class="hdr-lan">
+          <ul class="reset-list clearfix">
+            <li><a class="active" href="#">EN</a></li>
+            <li><a href="#">IT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
 </header>
