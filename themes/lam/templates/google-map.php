@@ -21,7 +21,7 @@
   <div class="google-map-cntlr">
     <span class="google-map-bg"></span>
     <?php if( $flgmap ): ?>
-    <div id="mapID" class="" data-latitude="<?php echo $flgmap['lat']; ?>" data-longitude="<?php echo $flgmap['lng']; ?>" style="width:100%; height:653px"></div>
+    <div id="mapID" class="" data-uri="<?php echo THEME_URI; ?>" data-latitude="<?php echo $flgmap['lat']; ?>" data-longitude="<?php echo $flgmap['lng']; ?>" style="width:100%; height:653px"></div>
     <?php endif; ?>
     <div class="map-side-add">
       <div class="cfls-logo">

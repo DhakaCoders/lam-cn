@@ -110,6 +110,25 @@
 	-moz-background: radial-gradient(50.43% 58.1% at 52.95% 38.84%, rgba(46, 35, 35, 0) 0%, rgba(37, 27, 28, 0.27) 0.01%, #251B1C 100%);
 	background: radial-gradient(50.43% 58.1% at 52.95% 38.84%, rgba(46, 35, 35, 0) 0%, rgba(37, 27, 28, 0.27) 0.01%, #251B1C 100%);
 }
+.gmap-frame{
+	position: relative;
+}
+.google-map-bg2{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;	
+}
+.google-map-bg2 img {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    max-width: initial;
+}
 .map-side-add{
     position: absolute;
     left: 13%;

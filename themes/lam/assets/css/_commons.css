@@ -10,6 +10,12 @@ a, button, input{
 	outline: 0;
 	border: 0;
 }
+a{
+	color: #B78454;
+}
+a:hover{
+	color: #DC6A2E;
+}
 a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;
@@ -354,4 +360,169 @@ ul li{
     background-size: 100% auto;
     width: 14px;
     height: 12px;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #B78454;
+}
+
+::selection {
+  color: #fff;
+  background: #B78454;
+}
+body #moove_gdpr_cookie_info_bar{
+    background: #111111!important;
+    max-width: 400px!important;
+    width: 100%!important;
+    border-radius: 5px;
+    border: 0!important;
+    left: 70px;
+    bottom: 30px;
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container{
+    padding: 25px 12px!important;
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-content{
+    display: block!important;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-content:after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../images/info.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-cookie-notice{}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-button-holder{}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-content h4{
+    font-weight: bold!important;
+    font-size: 22px!important;
+    line-height: 32px!important;
+        margin-bottom: 4px!important;
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-content p{
+    font-style: normal!important;
+    font-weight: normal!important;
+    font-size: 16px!important;
+    line-height: 24px!important;
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-content p a{
+    text-transform: uppercase!important;
+    font-style: normal!important;
+    font-weight: 600!important;
+    font-size: 13px!important;
+    line-height: 45px!important;
+    text-decoration: none!important;
+    display: inline-block!important;
+    position: relative;
+    padding-right: 17px!important;
+    margin-top: 5px;
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-content p a:after {
+    content: "";
+    background: url(../images/btn-rgt-arrow-sm-white.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-content p a:hover:after{
+    right: 0;
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-content p a:hover{
+    color: #fff!important;
+}
+body #moove_gdpr_cookie_info_bar .moove-gdpr-button-holder{
+    padding-left: 0!important;
+    margin-top: 10px;
+}
+body #moove_gdpr_cookie_info_bar button.moove-gdpr-infobar-allow-all {
+    width: 160px !important;
+    height: 45px !important;
+    background: #FFFFFF !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    font-style: normal;
+    font-weight: 800 !important;
+    font-size: 14px !important;
+    line-height: 45px !important;
+    color: #111111 !important;
+    text-transform: uppercase !important;
+}
+body #moove_gdpr_cookie_info_bar button.moove-gdpr-infobar-allow-all:hover{
+        background: #F6C042!important;
+    color: #fff!important;
+}
+body #moove_gdpr_cookie_info_bar button.moove-gdpr-infobar-reject-btn{
+    margin: 0!important;
+    padding: 0!important;
+    width: 24px!important;
+    height: 24px!important;
+    color: #fff!important;
+    position: absolute;
+    right: 0px!important;
+    top: -15px!important;
+}
+body #moove_gdpr_cookie_info_bar button.moove-gdpr-infobar-reject-btn:hover{
+    color: #EB1C23!important;
+}
+/**
+* Default WP Alignment Classes
+*/
+.aligncenter,.alignleft,.alignright {
+    display: block;
+    padding: 0;
+}
+
+.aligncenter {
+    float: none;
+    margin: .5em auto 1em;
+}
+
+.alignright {
+    float: right;
+    margin: .5em 0 1em 1em;
+}
+
+.alignleft {
+    float: left;
+    margin: .5em 1em 1em 0;
+}
+
+.wp-caption {
+    padding: 5px 0;
+    border: 1px solid #555;
+    background: #444;
+    text-align: center;
+}
+
+.wp-caption img {
+    display: inline;
+}
+
+.wp-caption p.wp-caption-text {
+    margin: 5px 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 75%;
+    font-weight: 100;
+    font-style: italic;
+    color: #ddd;
 }
