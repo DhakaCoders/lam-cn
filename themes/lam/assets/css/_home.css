@@ -1,5 +1,7 @@
 .main-banner-sec{
 	position: relative;
+	overflow: hidden;
+	padding-bottom: 50px;
 }
 .main-bnr-sec-des{
 	padding: 120px 0 0 0;
@@ -89,11 +91,23 @@
 }
 .hm-bnr-btl {
     position: absolute;
-    top: -116px;
-    left: -291px;
+    top: -4px;
+    left: 54px;
     z-index: 5;
 }
-
+.hm-bnr-btl-wrp-line {
+    position: absolute;
+    top: 393px;
+    left: 15px;
+    right: 0;
+    height: 170px;
+}
+.hm-bnr-circle-cntlr-inr{
+	text-align: center;
+}
+.hm-bnr-circle-cntlr-inr > span{
+	font-size: 20px;
+}
 .main-bnr-logo-xlg{
 	padding-bottom: 42px;
 }
@@ -142,11 +156,19 @@
 	background: transparent;
 }
 
+.snake-line {
+    position: absolute;
+    left: 0;
+    width: 64%;
+    height: 209px;
+    z-index: 5;
+    top: -154px;
+}
 
 .scroll-down-direction{
 	position: absolute;
 	left: 50%;
-	top: 49px;
+	top: 18px;
 	transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -170,7 +192,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: -134px;
+	top: -169px;
 	z-index: 1;
 	
 }
@@ -417,8 +439,24 @@ body.home .lam-about-us-tradition-sec{
 	position: relative;
 	z-index: 2;
 }
-
-
+.main-banner-sec{
+	position: relative;
+}
+@media(max-width: 1599px){
+	.hm-bnr-circle-cntlr{
+		margin-left: -155px;
+	}
+	.hm-bnr-btl{
+		left: -97px;
+	}
+	.snake-line{
+		width: 58%;
+	}
+	.hm-bnr-graphics-img{
+		top: 180px;
+		left: -41px;
+	}
+}
 @media(max-width: 1499px){
 	.lm-testi-angle-sec-logo{
 		max-width: 1000px;
@@ -458,6 +496,29 @@ body.home .lam-about-us-tradition-sec{
 	}
 	.lm-testi-angle-sec-des-cntlr blockquote{
 		max-width: 606px;
+	}
+
+	.hm-bnr-circle-cntlr {
+	    margin-left: -207px;
+	}
+	.cirle-xs-size{
+		left: 166px;
+		top: -16px;
+	}
+	.hm-bnr-graphics-img{
+		left: -81px;
+	}
+	.hm-bnr-circle-cntlr-inr{
+		padding-left: 110px;
+	}
+	.hmbcc-title{
+		font-size: 31px;
+	}
+	.main-bnr-logo-xlg{
+		max-width: 400px;
+	}
+	.main-bnr-sec-des p{
+		padding-right: 70px;
 	}
 }
 
@@ -509,7 +570,13 @@ body.home .lam-about-us-tradition-sec{
 	    max-width: 720px;
 	    bottom: -43px;
 	}
-
+	.hm-bnr-btl {
+	    left: -157px;
+	}
+	.hm-bnr-circle-cntlr {
+	    margin-left: -276px;
+	    width: 515px;
+	}
 }
 
 @media(max-width: 991px){
@@ -536,13 +603,13 @@ body.home .lam-about-us-tradition-sec{
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 100%;
+		top: 0;
 		background-repeat: repeat-x;
 		background-position: center top;
-		height: 29px;
+		height: 40px;
 		background: url(../images/hm-main-bnr-btm-line-xs.png);
 		z-index: 2;
-		margin-top: -14px;
+		margin-top: -5px;
 	}
 	.hm-about-us-des p {
 	    margin-bottom: 30px;
@@ -586,6 +653,74 @@ body.home .lam-about-us-tradition-sec{
 	.lm-testi-angle-sec-logo {
 	    max-width: 600px;
 	    bottom: -32px;
+	}
+	.snake-line{
+		display: none;
+	}
+	.main-bnr-sec-des {
+	    max-width: 700px;
+	    width: 100%;
+	    text-align: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.main-bnr-sec-des > a,
+	.main-bnr-logo-xlg{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.main-bnr-sec-des p {
+	    padding-right: 0;
+	}
+	.hm-bnr-graphics-img{
+		display: none;
+	}
+	.hm-bnr-circle-cntlr {
+	    margin-left: auto;
+	    width: 100%;
+	    margin-right: auto;
+	    padding-top: 61px;
+	}
+
+	.hm-bnr-fea-img-cntlr{
+		padding-left: 0;
+		max-width: 500px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 386px;
+	}
+
+	.hm-bnr-btl {
+	    left: 50%;
+	    transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	    margin-top: 5px;
+	}
+	.hm-bnr-circle-cntlr{
+		background: linear-gradient(0deg, #0C6C88, #0C6C88), #045870;
+	}
+	.cirle-xs-size{
+		background: linear-gradient(0deg, #0C6C88, #0C6C88), #045870;
+		display: none;
+	}
+	.cirle-xs-size-2{
+		background: linear-gradient(0deg, #045870, #045870), #0C6C88;
+	}
+	.cirle-md-size{
+		background: linear-gradient(0deg, #045870, #045870), #0C6C88;
+	}
+	.hm-bnr-btl-wrp-line {
+	    position: absolute;
+	    top: 282px;
+	    left: 10px;
+	    right: 0px;
+	    height: 170px;
+	    max-width: 196px;
+	}
+	.hm-bnr-circle-cntlr-inr{
+		padding-left: 0;
 	}
 }
 

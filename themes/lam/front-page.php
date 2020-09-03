@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <section class="main-banner-sec">
+
   <div class="main-banner-sec-inr">
     <div class="container">
       <div class="row">
@@ -8,7 +9,7 @@
           $collft = get_field('collft', HOMEID);  
           $colrgt = get_field('colrgt', HOMEID);  
         ?>
-        <div class="col-md-6 order-2">
+        <div class="col-lg-6 order-lg-2">
           <div class="hm-bnr-fea-img-cntlr">
 
             <span class="hm-bnr-graphics-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-bnr-graphics-img.png);">
@@ -20,7 +21,10 @@
                   echo cbv_get_image_tag($colrgt['afbeelding']);
                 endif;
               ?>
-            </span>
+              <span class="hm-bnr-btl-wrp-line">
+                <img src="<?php echo THEME_URI; ?>/assets/images/hm-bnr-btl-wrp-line.svg">
+              </span>
+            </span> 
             <div class="hm-bnr-circle-cntlr">
               <span class="cirle-xs-size"></span>
               <span class="cirle-xs-size-2"></span>
@@ -35,7 +39,7 @@
             <?php endif; ?>
           </div>
         </div>
-        <div class="col-md-6 order-1">
+        <div class="col-lg-6 order-lg-1">
           <?php if( $collft ): ?>
           <div class="main-bnr-sec-des">
             <div class="main-bnr-logo-xlg">
@@ -61,11 +65,26 @@
       </div>
     </div>
   </div>
-  <span class="hm-main-bnr-btm-line-xs"></span>    
+     
+
+  <!-- <span class="hm-bnr-btl">
+    <?php 
+      if( !empty($colrgt['afbeelding']) ): 
+        echo cbv_get_image_tag($colrgt['afbeelding']);
+      endif;
+    ?>
+  </span> -->
 </section>
 
 
 <div class="two-sec-cntrl">
+  <span class="snake-line">
+    <svg class="svg-cntlr" preserveAspectRatio="none" width="1246" height="209" viewBox="0 0 1246 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M679.5 76.0001C679.5 76.0001 883 104.5 1015.17 29.1227C1073.81 0.163774 1090.55 13.714 1113.52 17.3634C1135.49 20.7425 1150.86 21.3508 1191.32 7.22611C1208.55 1.37149 1227.01 1.37149 1244.23 7.22611" stroke="#B78454" stroke-width="5" stroke-miterlimit="10"/>
+    <path d="M1214.5 206.512C1012 94.5123 158 3.00012 0 3.00012" stroke="#B78454" stroke-width="5" stroke-miterlimit="10"/>
+    </svg>
+  </span>
+  <span class="hm-main-bnr-btm-line-xs"></span> 
   <span class="lines" style="background: url(<?php echo THEME_URI; ?>/assets/images/lines.svg);"></span>
   <div class="two-sec-cntrl-inr">
     <?php
@@ -75,9 +94,8 @@
     <section class="hm-about-us-section">
       <span class="hm-about-us-top-angle">
         <svg class="svg-cntlr" preserveAspectRatio="none" width="1920" height="502" viewBox="0 0 1920 502" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M-48 499.012L26 454.512C777 53.5123 1986.5 290.683 1986.5 290.683V141" stroke="#B78454" stroke-width="5" stroke-miterlimit="10"/>
         <path d="M1976.72 288.466C1976.72 288.466 780.762 51.0624 38.1714 452.456L-35 497V0.00012207H1996L1976.72 288.466Z" fill="#251B1C"/>
-        <path d="M1214.5 221.512C1012 109.512 158 18.0001 0 18.0001" stroke="#B78454" stroke-width="5" stroke-miterlimit="10"/>
+        <path d="M-48 499.012L26 454.512C777 53.5123 1986.5 290.683 1986.5 290.683V141" stroke="#B78454" stroke-width="5" stroke-miterlimit="10"/>
         </svg>
       </span>
       <div class="scroll-down-direction scrollto" data-to="#sec-welcome">
