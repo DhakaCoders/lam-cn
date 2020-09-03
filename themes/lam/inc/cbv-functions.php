@@ -168,3 +168,24 @@ function redirect_after_add_to_cart( $url ) {
     return esc_url( get_permalink( get_page_by_title( 'cart' ) ) );
 }
 add_filter( 'woocommerce_add_to_cart_redirect', 'redirect_after_add_to_cart', 99 );
+
+function eec_language_selector_flags(){
+  if ( function_exists('icl_object_id') ) {
+      $languages = icl_get_languages('skip_missing=0&orderby=code');
+      $output = '';
+      if(!empty($languages)){
+        $output .= '<div class="language-wrapp"><div class="hdr-lang-cntrl"><div class="wpml-language">';
+        $output .= '<ul>';
+          foreach($languages as $l){
+            if(!$l['active']){
+              $output .= '<li><a href="'.$l['url'].'"><img src="'.$l['country_flag_url'].'" height="12" alt="'.$l['language_code'].'" width="18" /><span>'.$l['language_code'].'</span></a></li>';
+            }else{
+              $output .= '<li class="lag-active"><a href="'.$l['url'].'"><img src="'.$l['country_flag_url'].'" height="12" alt="'.$l['language_code'].'" width="18" /><span>'.$l['language_code'].'</span></a></li>'; 
+            }
+          }
+        $output .= '</ul>'
+        $output .= '</div></div></div>';
+      }
+  }
+}
+add_shortcode( 'eec-language', 'eec_language_selector_flags' );
