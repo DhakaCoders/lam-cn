@@ -39,7 +39,7 @@
             ?> 
             </div>
             <div class="ftr-designby">
-              <a href="#">webdesign by conversal</a>
+              <a target="_blank" href="https://www.conversal.be/">webdesign by conversal</a>
             </div>
           </div>
         </div>

@@ -65,7 +65,7 @@
             </div>
             <?php if( !empty( $adres ) ): ?>
             <div class="cfls-adress">
-              <a href="<?php echo $gmaplink; ?>">
+              <a target="_blank" href="<?php echo $gmaplink; ?>">
                 <i>
                   <svg class="lam-map-marker-svg" width="13" height="17" viewBox="0 0 13 17" fill="#fff">
                     <use xlink:href="#lam-map-marker-svg"></use>
