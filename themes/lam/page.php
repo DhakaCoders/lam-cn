@@ -119,5 +119,5 @@
 <?php 
 endwhile;
 ?>
-<?php get_template_part('templates/google', 'map'); ?>
+<?php get_template_part('templates/google', 'maphm'); ?>
 <?php get_footer(); ?>

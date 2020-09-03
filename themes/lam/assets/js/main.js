@@ -1,7 +1,7 @@
 (function($) {
 
 /*Google Map Style*/
-var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+var CustomMapStyles  = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"1"},{"color":"#ffffff"},{"saturation":"-3"},{"weight":"1.92"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#b78454"},{"lightness":"-50"},{"saturation":"-40"},{"weight":"1"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45},{"visibility":"simplified"},{"color":"#342b2b"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"off"},{"color":"#342b2b"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#342b2b"},{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"simplified"},{"color":"#342b2b"}]},{"featureType":"road.highway.controlled_access","elementType":"all","stylers":[{"visibility":"off"},{"color":"#342b2b"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"all","stylers":[{"color":"#342b2b"},{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.airport","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"transit.station.bus","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.rail","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#dde6e8"},{"visibility":"off"}]}]
 
 
 
@@ -124,18 +124,18 @@ if( $('.responsive-slider').length ){
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');
 var longitude = $('#mapID').data('longitude');
-
+var uri = $('#mapID').data('uri');
 var myCenter= new google.maps.LatLng(latitude,  longitude);
 function initialize(){
     var mapProp = {
       center:myCenter,
-      mapTypeControl:true,
+      mapTypeControl:false,
       scrollwheel: false,
-      zoomControl: true,
-      disableDefaultUI: true,
-      zoom:7,
+      zoomControl: false,
+      disableDefaultUI: false,
+      zoom:12,
       streetViewControl: false,
-      rotateControl: true,
+      rotateControl: false,
       mapTypeId:google.maps.MapTypeId.ROADMAP,
       styles: CustomMapStyles
       };
@@ -143,7 +143,7 @@ function initialize(){
     var map= new google.maps.Map(document.getElementById('mapID'),mapProp);
     var marker= new google.maps.Marker({
       position:myCenter,
-        icon:'map-marker.png'
+        icon:uri+'/assets/images/map-marker.png'
       });
     marker.setMap(map);
 }
@@ -233,9 +233,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 var container = $(".container").width();
 var leftSideWidth = (windowWidth - container ) / 2;
-
+var gmapside = $('.map-side-add').outerWidth();
+var gmapsideleft = leftSideWidth + gmapside;
 $(".lm-testi-angle-sec-des-cntlr blockquote, .map-side-add").css({left : leftSideWidth});
-
+$('.gmap-frame').css('margin-left', gmapsideleft);
 function leftWidth() {
   var container = $(".container").width();
   var leftSideWidth = (windowWidth - container ) / 2;

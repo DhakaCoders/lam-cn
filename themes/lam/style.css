@@ -12,4 +12,9 @@ Text Domain: lam
 */
 
 @import url('assets/css/main.css');
-
+.gm-control-active.gm-fullscreen-control{
+	display: none;
+}
+.main-content.page-404-wrp.error-404-wrap{
+	background: #221618;
+}
