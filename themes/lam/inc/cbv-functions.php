@@ -183,7 +183,7 @@ function eec_language_selector_flags(){
               $output .= '<li class="lag-active"><a href="'.$l['url'].'"><img src="'.$l['country_flag_url'].'" height="12" alt="'.$l['language_code'].'" width="18" /><span>'.$l['language_code'].'</span></a></li>'; 
             }
           }
-        $output .= '</ul>'
+        $output .= '</ul>';
         $output .= '</div></div></div>';
       }
   }
