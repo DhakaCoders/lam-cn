@@ -1,5 +1,7 @@
 .main-banner-sec{
 	position: relative;
+	overflow: hidden;
+	padding-bottom: 50px;
 }
 .main-bnr-sec-des{
 	padding: 120px 0 0 0;
@@ -89,9 +91,19 @@
 }
 .hm-bnr-btl {
     position: absolute;
-    top: -116px;
-    left: -291px;
+    top: -4px;
+    left: 54px;
     z-index: 5;
+}
+.hm-bnr-btl-wrp-line {
+    position: absolute;
+    top: 393px;
+    left: 15px;
+    right: 0;
+    height: 170px;
+}
+.hm-bnr-circle-cntlr-inr{
+	text-align: center;
 }
 
 .main-bnr-logo-xlg{
@@ -142,11 +154,19 @@
 	background: transparent;
 }
 
+.snake-line {
+    position: absolute;
+    left: 0;
+    width: 64%;
+    height: 209px;
+    z-index: 5;
+    top: -154px;
+}
 
 .scroll-down-direction{
 	position: absolute;
 	left: 50%;
-	top: 49px;
+	top: 18px;
 	transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -170,7 +190,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: -134px;
+	top: -169px;
 	z-index: 1;
 	
 }
@@ -417,7 +437,9 @@ body.home .lam-about-us-tradition-sec{
 	position: relative;
 	z-index: 2;
 }
-
+.main-banner-sec{
+	position: relative;
+}
 
 @media(max-width: 1499px){
 	.lm-testi-angle-sec-logo{
@@ -536,13 +558,13 @@ body.home .lam-about-us-tradition-sec{
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 100%;
+		top: 0;
 		background-repeat: repeat-x;
 		background-position: center top;
-		height: 29px;
+		height: 40px;
 		background: url(../images/hm-main-bnr-btm-line-xs.png);
 		z-index: 2;
-		margin-top: -14px;
+		margin-top: -5px;
 	}
 	.hm-about-us-des p {
 	    margin-bottom: 30px;
