@@ -105,7 +105,9 @@
 .hm-bnr-circle-cntlr-inr{
 	text-align: center;
 }
-
+.hm-bnr-circle-cntlr-inr > span{
+	font-size: 20px;
+}
 .main-bnr-logo-xlg{
 	padding-bottom: 42px;
 }
@@ -440,7 +442,21 @@ body.home .lam-about-us-tradition-sec{
 .main-banner-sec{
 	position: relative;
 }
-
+@media(max-width: 1599px){
+	.hm-bnr-circle-cntlr{
+		margin-left: -155px;
+	}
+	.hm-bnr-btl{
+		left: -97px;
+	}
+	.snake-line{
+		width: 58%;
+	}
+	.hm-bnr-graphics-img{
+		top: 180px;
+		left: -41px;
+	}
+}
 @media(max-width: 1499px){
 	.lm-testi-angle-sec-logo{
 		max-width: 1000px;
@@ -480,6 +496,29 @@ body.home .lam-about-us-tradition-sec{
 	}
 	.lm-testi-angle-sec-des-cntlr blockquote{
 		max-width: 606px;
+	}
+
+	.hm-bnr-circle-cntlr {
+	    margin-left: -207px;
+	}
+	.cirle-xs-size{
+		left: 166px;
+		top: -16px;
+	}
+	.hm-bnr-graphics-img{
+		left: -128px;
+	}
+	.hm-bnr-circle-cntlr-inr{
+		padding-left: 110px;
+	}
+	.hmbcc-title{
+		font-size: 31px;
+	}
+	.main-bnr-logo-xlg{
+		max-width: 400px;
+	}
+	.main-bnr-sec-des p{
+		padding-right: 70px;
 	}
 }
 
@@ -531,7 +570,13 @@ body.home .lam-about-us-tradition-sec{
 	    max-width: 720px;
 	    bottom: -43px;
 	}
-
+	.hm-bnr-btl {
+	    left: -157px;
+	}
+	.hm-bnr-circle-cntlr {
+	    margin-left: -276px;
+	    width: 515px;
+	}
 }
 
 @media(max-width: 991px){
@@ -608,6 +653,43 @@ body.home .lam-about-us-tradition-sec{
 	.lm-testi-angle-sec-logo {
 	    max-width: 600px;
 	    bottom: -32px;
+	}
+	.snake-line{
+		display: none;
+	}
+	.main-bnr-sec-des {
+	    max-width: 700px;
+	    width: 100%;
+	    text-align: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.main-bnr-sec-des > a,
+	.main-bnr-logo-xlg{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.main-bnr-sec-des p {
+	    padding-right: 0;
+	}
+	.hm-bnr-graphics-img{
+		display: none;
+	}
+	.hm-bnr-circle-cntlr {
+	    margin-left: auto;
+	    width: 100%;
+	    margin-right: auto;
+	}
+
+	.hm-bnr-fea-img-cntlr{
+		padding-left: 0;
+		max-width: 500px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hm-bnr-btl {
+	    left: -107px;
 	}
 }
 

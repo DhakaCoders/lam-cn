@@ -9,7 +9,7 @@
           $collft = get_field('collft', HOMEID);  
           $colrgt = get_field('colrgt', HOMEID);  
         ?>
-        <div class="col-md-6 order-2">
+        <div class="col-lg-6 order-lg-2">
           <div class="hm-bnr-fea-img-cntlr">
 
             <span class="hm-bnr-graphics-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-bnr-graphics-img.png);">
@@ -39,7 +39,7 @@
             <?php endif; ?>
           </div>
         </div>
-        <div class="col-md-6 order-1">
+        <div class="col-lg-6 order-lg-1">
           <?php if( $collft ): ?>
           <div class="main-bnr-sec-des">
             <div class="main-bnr-logo-xlg">
