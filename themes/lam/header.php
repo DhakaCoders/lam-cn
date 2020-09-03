@@ -94,7 +94,7 @@ $instagram = get_field('instagram_url', 'options');
               <div class="hdr-social">
                 <ul class="reset-list clearfix">
                 <?php if( !empty( $instagram ) ): ?>
-                  <li><a href="<?php echo $instagram; ?>"><i class="fab fa-instagram"></i></a></li>
+                  <li><a target="_blank" href="<?php echo $instagram; ?>"><i class="fab fa-instagram"></i></a></li>
                 <?php endif; ?>
                 </ul>
               </div>

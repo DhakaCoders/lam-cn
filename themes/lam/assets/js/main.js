@@ -119,115 +119,78 @@ if( $('.responsive-slider').length ){
 }
 
 
-
-
 if( $('#mapID').length ){
-var latitude = $('#mapID').data('latitude');
-var longitude = $('#mapID').data('longitude');
-var uri = $('#mapID').data('uri');
-var myCenter= new google.maps.LatLng(latitude,  longitude);
-function initialize(){
-    var mapProp = {
-      center:myCenter,
-      mapTypeControl:false,
-      scrollwheel: false,
-      zoomControl: false,
-      disableDefaultUI: false,
-      zoom:12,
-      streetViewControl: false,
-      rotateControl: false,
-      mapTypeId:google.maps.MapTypeId.ROADMAP,
-      styles: CustomMapStyles
-      };
+  var latitude = $('#mapID').data('latitude');
+  var longitude = $('#mapID').data('longitude');
+  var uri = $('#mapID').data('uri');
+  var myCenter= new google.maps.LatLng(latitude,  longitude);
+  function initialize(){
+      var mapProp = {
+        center:myCenter,
+        mapTypeControl:false,
+        scrollwheel: false,
+        zoomControl: false,
+        disableDefaultUI: false,
+        zoom:12,
+        streetViewControl: false,
+        rotateControl: false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP,
+        styles: CustomMapStyles
+        };
 
-    var map= new google.maps.Map(document.getElementById('mapID'),mapProp);
-    var marker= new google.maps.Marker({
-      position:myCenter,
-        icon:uri+'/assets/images/map-marker.png'
-      });
-    marker.setMap(map);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-
-}
-
-    new WOW().init();
-
-
-
-
-
-
-    $('.scrollto').on('click', function(e){
-      e.preventDefault();
-      var togo = $(this).data('to');
-      goToByScroll(togo, 0);
-    });
-
-    function goToByScroll(id, offset){
-      if(id){
-      // Remove "link" from the ID
-      id = id.replace("link", "");
-      // Scroll
-      $('html,body').animate(
-        {scrollTop: $(id).offset().top - offset},
-        500);
-    }
+      var map= new google.maps.Map(document.getElementById('mapID'),mapProp);
+      var marker= new google.maps.Marker({
+        position:myCenter,
+          icon:uri+'/assets/images/map-marker.png'
+        });
+      marker.setMap(map);
   }
+  google.maps.event.addDomListener(window, 'load', initialize);
+}
 
+new WOW().init();
 
+$('.scrollto').on('click', function(e){
+  e.preventDefault();
+  var togo = $(this).data('to');
+  goToByScroll(togo, 0);
+});
 
-/*  function leftWidth() {
-    var container = $(".container").width();
-    var leftSideWidth = (windowWidth - container ) / 2;
-    $(".map-side-add").css({left : leftSideWidth});
-  };
-  leftWidth();
-  $(window).resize(function() {
-    leftWidth();
-  });*/
-  if (windowWidth <= 1199) {
-    $('.hdr-humberger').on('click', function(e){
-      $('.xs-main-nav-cntlr').addClass('opacity-1');
-      $('.bdoverlay').addClass('active');
-      $('body').addClass('active-scroll-off');
-      $(this).addClass('active-collapse');
-    });
-    $('.closebtn').on('click', function(e){
-      $('.bdoverlay').removeClass('active');
-      $('.xs-main-nav-cntlr').removeClass('opacity-1');
-      $('body').removeClass('active-scroll-off');
-      $('.line-icon').removeClass('active-collapse');
-    });
-    
-    $('li.menu-item-has-children > a').on('click', function(e){
-      e.preventDefault();
+function goToByScroll(id, offset){
+  if(id){
+  // Remove "link" from the ID
+  id = id.replace("link", "");
+  // Scroll
+  $('html,body').animate(
+    {scrollTop: $(id).offset().top - offset},
+    500);
+}
+}
+
+if (windowWidth <= 1199) {
+  $('.hdr-humberger').on('click', function(e){
+    $('.xs-main-nav-cntlr').addClass('opacity-1');
+    $('.bdoverlay').addClass('active');
+    $('body').addClass('active-scroll-off');
+    $(this).addClass('active-collapse');
+  });
+  $('.closebtn').on('click', function(e){
+    $('.bdoverlay').removeClass('active');
+    $('.xs-main-nav-cntlr').removeClass('opacity-1');
+    $('body').removeClass('active-scroll-off');
+    $('.line-icon').removeClass('active-collapse');
+  });
+  
+  $('li.menu-item-has-children > a').on('click', function(e){
+    e.preventDefault();
     //$('li.menu-item-has-children .sub-menu').slideUp(300);
     $(this).toggleClass('sub-menu-active');
     $(this).toggleClass('sub-menu-plus');
     //$(this).next().slideDown(300);
     $(this).next().slideToggle(300);
     $(this).css('color', '#B78454');
-
   });
-  }
-
-
-
-
-    /*End of Noyon*/
-
-
-
-
-
-
-
-
-
-
-     /*End of Shariful*/
-
+}
 
 
 
@@ -246,7 +209,5 @@ leftWidth();
 $(window).resize(function() {
     leftWidth();
 });
-
-      /*End of Rannojit*/
 
 })(jQuery);
